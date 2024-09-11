@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -14,56 +14,72 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type HeaderProps = {};
+type NavbarItem = {
+	href: string;
+	label: string;
+};
+const NavbarItems: NavbarItem[] = [
+	{
+		href: '/hardware',
+		label: 'Hardware',
+	},
+	{
+		href: '/software',
+		label: 'Software',
+	},
+	{
+		href: '/design',
+		label: 'Design',
+	},
+];
 
 const Navbar = ({}: HeaderProps) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<header className="bg-background-dnai/20 absolute left-0 top-0 z-50 w-full backdrop-blur-lg">
+		<header className="bg-background-dnai/20 absolute left-0 top-0 z-50 w-full h-20">
 			<nav
 				aria-label="Global"
-				className="flex items-center justify-between px-6 py-4 lg:px-8">
-				<div className="flex flex-row items-center">
+				className="flex items-center justify-between px-6 py-3 lg:px-8 relative">
+				<div className="absolute z-50 h-full w-full bg-gradient-to-b from-background to-background/0" />
+				<div
+					className="gradient-blur z-0 absolute "
+					style={{
+						height: '100%',
+						transform: 'scaleY(-1)',
+					}}>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div className="flex flex-row items-center relative z-50">
 					<Link
-						className="w-[120px] cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80"
+						className="w-[220px] cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80"
 						href="/">
-						<Image
-							src="/icon.svg"
-							alt="Logo"
-							width={54}
-							height={54}
-						/>
+						<Label variant="title4">
+							Connor
+							<span className="text-white/40">
+								Holowachuk
+							</span>
+						</Label>
 					</Link>
 					<div className="hidden gap-10 gap-x-10 md:flex md:flex-row">
-						<Link
-							href="/"
-							className="cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80">
-							<Label className="text-md cursor-pointer font-sans font-normal text-black/50">
-								Product
-							</Label>
-						</Link>
-						<Link
-							href="/manifesto"
-							className="cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80">
-							<Label className="text-md cursor-pointer font-sans font-normal text-black/50">
-								Manifesto
-							</Label>
-						</Link>
-						<Link
-							href="/roadmap"
-							className="cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80">
-							<Label className="text-md cursor-pointer font-sans font-normal text-black/50">
-								Roadmap
-							</Label>
-						</Link>
+						{NavbarItems.map((item) => (
+							<NavbarItem key={item.href} {...item} />
+						))}
 					</div>
 				</div>
-				<div className="flex md:hidden">
+				<div className="flex md:hidden relative z-50">
 					<button
 						type="button"
 						onClick={() => setMobileMenuOpen(true)}
 						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-						<span className="sr-only">Open main menu</span>
+						<span className="sr-only">
+							Open main menu
+						</span>
 						<Menu
 							aria-hidden="true"
 							className={cn(
@@ -75,21 +91,13 @@ const Navbar = ({}: HeaderProps) => {
 						/>
 					</button>
 				</div>
-				<div className="hidden lg:flex lg:gap-x-12"></div>
-				<div className="hidden items-center md:flex md:flex-1 md:justify-end">
-					<Link
-						href="/login"
-						className="flex cursor-pointer flex-row items-center justify-center px-2 py-2 transition-all duration-200 hover:opacity-80">
-						<Label className="text-md cursor-pointer font-sans font-normal text-black/50">
-							Sign in
-						</Label>
-					</Link>
-					<div className="mx-4 h-5 w-[1px] bg-black/10"></div>
+				<div className="hidden lg:flex lg:gap-x-12 relative z-50"></div>
+				<div className="hidden items-center md:flex md:flex-1 md:justify-end relative z-50">
 					<Link
 						href="/get-started"
-						className="flex cursor-pointer flex-row items-center justify-center rounded-md bg-black px-6 py-2 shadow-none transition-all duration-200 hover:opacity-80 hover:shadow-lg">
-						<Label className="text-md cursor-pointer font-sans font-normal text-white">
-							Clone yourself
+						className="flex cursor-pointer flex-row items-center justify-center rounded-xs bg-accent px-6 py-3 shadow-none transition-all duration-200 hover:bg-accent-foreground hover:shadow-lg">
+						<Label className="text-sm cursor-pointer font-mono font-normal text-white">
+							Let's chat
 						</Label>
 					</Link>
 				</div>
@@ -103,20 +111,18 @@ const Navbar = ({}: HeaderProps) => {
 				<div className="fixed inset-0 z-50" />
 				<div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white/50 px-6 py-4 backdrop-blur-md sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 					<div className="flex items-center justify-between">
-						<a href="#" className="-m-1.5 p-1.5">
-							<Image
-								src="/icons/dnai/icon.svg"
-								alt="Logo"
-								width={54}
-								height={54}
-							/>
-						</a>
+						<a href="#" className="-m-1.5 p-1.5"></a>
 						<button
 							type="button"
 							onClick={() => setMobileMenuOpen(false)}
 							className="-m-2.5 rounded-md p-2.5 text-gray-700">
-							<span className="sr-only">Close menu</span>
-							<X aria-hidden="true" className="h-6 w-6" />
+							<span className="sr-only">
+								Close menu
+							</span>
+							<X
+								aria-hidden="true"
+								className="h-6 w-6"
+							/>
 						</button>
 					</div>
 					<div className="mt-6 flow-root">
@@ -167,3 +173,15 @@ const Navbar = ({}: HeaderProps) => {
 };
 
 export default Navbar;
+
+const NavbarItem = ({ href, label }: NavbarItem) => {
+	return (
+		<Link
+			href={href}
+			className="hover:opacity-60 transition-all duration-200 ease-in-out">
+			<Label className="cursor-pointer font-sans text-md font-normal text-primary/80">
+				{label}
+			</Label>
+		</Link>
+	);
+};

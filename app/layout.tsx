@@ -15,6 +15,13 @@ const geistMono = localFont({
 	weight: '100 900',
 });
 
+import '@fontsource/azeret-mono'; // Defaults to weight 400
+import '@fontsource/azeret-mono/500.css'; // Specify weight
+import '@fontsource/azeret-mono/400.css'; // Specify weight
+import '@fontsource/azeret-mono/300.css'; // Specify weight
+import '@fontsource/azeret-mono/200.css'; // Specify weight
+import '@fontsource/azeret-mono/100.css'; // Specify weight
+
 export const metadata: Metadata = {
 	title: 'DNAi',
 	description: 'The assistant that thinks like you.',

@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
         let ipAddress = req.headers.get("x-forwarded-for") ||
             req.headers.get("x-real-ip");
         let isLocalhost = ipAddress === "::1";
-        ipAddress = isLocalhost ? "127.0.0.1" : ipAddress;
+        ipAddress = isLocalhost ? "199.116.242.249" : ipAddress;
 
         const location = ipAddress ? await fetchLocation(ipAddress) : null;
         const parser = new UAParser(userAgentString);
