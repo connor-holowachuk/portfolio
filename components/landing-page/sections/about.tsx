@@ -2,24 +2,11 @@ import React from 'react';
 
 // Import components
 import { Label } from '@/components/ui/label';
-import { Button } from '@/components/ui/button';
 import {
 	Section,
 	Column,
 } from '@/components/landing-page/sections/section-wrapper';
 import { OptimizedImage } from '@/components/ui/optimized-image';
-
-// Import icons
-import {} from 'lucide-react';
-
-// Import utils
-import { cn } from '@/lib/utils';
-
-// Import actions
-
-// Import providers
-
-// Define and import types
 
 const About = async () => {
 	return (

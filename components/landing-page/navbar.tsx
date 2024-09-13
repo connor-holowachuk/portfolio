@@ -40,7 +40,7 @@ const Navbar = ({}: HeaderProps) => {
 		<header className="bg-background-dnai/20 absolute left-0 top-0 z-50 w-full h-20">
 			<nav
 				aria-label="Global"
-				className="flex items-center justify-between px-6 py-3 lg:px-8 relative">
+				className="flex items-center justify-between py-3  relative w-full ">
 				<div className="absolute z-50 h-full w-full bg-gradient-to-b from-background to-background/0" />
 				<div
 					className="gradient-blur z-0 absolute "
@@ -55,51 +55,56 @@ const Navbar = ({}: HeaderProps) => {
 					<div></div>
 					<div></div>
 				</div>
-				<div className="flex flex-row items-center relative z-50">
-					<Link
-						className="w-[220px] cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80"
-						href="/">
-						<Label variant="title4">
-							Connor
-							<span className="text-white/40">
-								Holowachuk
-							</span>
-						</Label>
-					</Link>
-					<div className="hidden gap-10 gap-x-10 md:flex md:flex-row">
-						{NavbarItems.map((item) => (
-							<NavbarItem key={item.href} {...item} />
-						))}
+				<div className="max-w-7xl mx-auto w-full flex items-center justify-between px-4 md:px-8 lg:px-8 xl:px-0 py-2 lg:py-0">
+					<div className="flex flex-row items-center relative z-50">
+						<Link
+							className="w-[220px] cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80"
+							href="/">
+							<Label variant="title4" cursor="pointer">
+								Connor
+								<span className="text-white/40">
+									Holowachuk
+								</span>
+							</Label>
+						</Link>
+						<div className="hidden gap-10 gap-x-10 md:flex md:flex-row">
+							{NavbarItems.map((item) => (
+								<NavbarItem
+									key={item.href}
+									{...item}
+								/>
+							))}
+						</div>
 					</div>
-				</div>
-				<div className="flex md:hidden relative z-50">
-					<button
-						type="button"
-						onClick={() => setMobileMenuOpen(true)}
-						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-						<span className="sr-only">
-							Open main menu
-						</span>
-						<Menu
-							aria-hidden="true"
-							className={cn(
-								'h-6 w-6',
-								mobileMenuOpen
-									? 'opacity-0 lg:opacity-100'
-									: 'opacity-100'
-							)}
-						/>
-					</button>
-				</div>
-				<div className="hidden lg:flex lg:gap-x-12 relative z-50"></div>
-				<div className="hidden items-center md:flex md:flex-1 md:justify-end relative z-50">
-					<Link
-						href="/get-started"
-						className="flex cursor-pointer flex-row items-center justify-center rounded-xs bg-accent px-6 py-3 shadow-none transition-all duration-200 hover:bg-accent-foreground hover:shadow-lg">
-						<Label className="text-sm cursor-pointer font-mono font-normal text-white">
-							Let's chat
-						</Label>
-					</Link>
+					<div className="flex md:hidden relative z-50">
+						<button
+							type="button"
+							onClick={() => setMobileMenuOpen(true)}
+							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+							<span className="sr-only">
+								Open main menu
+							</span>
+							<Menu
+								aria-hidden="true"
+								className={cn(
+									'h-6 w-6',
+									mobileMenuOpen
+										? 'opacity-0 lg:opacity-100'
+										: 'opacity-100'
+								)}
+							/>
+						</button>
+					</div>
+					<div className="hidden lg:flex lg:gap-x-12 relative z-50"></div>
+					<div className="hidden items-center md:flex md:flex-1 md:justify-end relative z-50">
+						<Link
+							href="/get-started"
+							className="flex cursor-pointer flex-row items-center justify-center rounded-xs bg-accent px-6 py-3 shadow-none transition-all duration-200 hover:bg-accent-foreground hover:shadow-lg">
+							<Label className="text-sm cursor-pointer font-mono font-normal text-white">
+								Let's chat
+							</Label>
+						</Link>
+					</div>
 				</div>
 			</nav>
 			<div

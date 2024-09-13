@@ -4,6 +4,9 @@ import './globals.css';
 import { ModalProvider } from '@/lib/providers/ModalContext';
 import { ModalContainer } from '@/components/modals/modal-wrapper';
 
+import Navbar from '@/components/landing-page/navbar';
+import Footer from '@/components/landing-page/footer';
+
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
 	variable: '--font-geist-sans',
@@ -33,12 +36,17 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className="h-screen w-screen relative overflow-hidden">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} h-screen w-screen bg-background antialiased`}>
+				className={`${geistSans.variable} ${geistMono.variable} overflow-auto  h-screen w-screen bg-background antialiased`}>
 				<ModalProvider>
-					{children}
 					<ModalContainer />
+					<Navbar />
+					{children}
+
+					<Footer />
 				</ModalProvider>
 			</body>
 		</html>

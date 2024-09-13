@@ -44,6 +44,7 @@ type SectionProps = {
 	fullWidth?: boolean;
 	borderBottom?: boolean;
 	noCols?: boolean;
+	id?: string;
 };
 
 export const Section: React.FC<SectionProps> = ({
@@ -53,6 +54,7 @@ export const Section: React.FC<SectionProps> = ({
 	fullWidth,
 	borderBottom,
 	noCols,
+	id,
 }) => {
 	return (
 		<div
@@ -61,13 +63,16 @@ export const Section: React.FC<SectionProps> = ({
 				outerClassName,
 				fullWidth ? 'w-full px-0' : 'w-full',
 				borderBottom && 'border-b border-border border-dashed'
-			)}>
+			)}
+			id={id}>
 			<div className="flex w-full flex-row ">
 				<div
 					className={cn(
 						'mx-auto w-full  ',
 						className,
-						noCols ? 'w-full' : 'grid grid-cols-3',
+						noCols
+							? 'w-full'
+							: 'grid grid-cols-1 lg:grid-cols-3',
 						fullWidth
 							? 'w-full px-0'
 							: 'max-w-screen-xl lg:px-8'

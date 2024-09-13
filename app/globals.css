@@ -314,3 +314,70 @@ body {
 		rgba(0, 0, 0, 1) 100%
 	);
 }
+
+/* Add this at the end of the file */
+
+@keyframes slow-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-slow-spin {
+	animation: slow-spin 20s linear infinite;
+}
+
+.project-card {
+	position: relative;
+}
+
+.project-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radial-gradient(
+		circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+		var(--project-color) 0%,
+		transparent 60%
+	);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	pointer-events: none;
+}
+
+.project-card:hover::before {
+	opacity: 0.2;
+}
+
+.project-card-border {
+	position: relative;
+}
+
+.project-card-border::before {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radial-gradient(
+		circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+		white 0%,
+		var(--project-color-border) 30%,
+		transparent 60%
+	);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	pointer-events: none;
+}
+
+.project-card-border:hover::before {
+	opacity: 0.67;
+}

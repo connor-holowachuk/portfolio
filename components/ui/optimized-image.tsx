@@ -20,7 +20,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
 	className,
 	placeholderSrc,
 }) => {
-	const [isLoading, setIsLoading] = useState(true);
+	const [isLoading, setIsLoading] = useState(false);
 
 	return (
 		<div className={cn('relative w-full h-full', className)}>
@@ -38,8 +38,8 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
 				src={src}
 				alt={alt}
 				fill
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				onLoad={() => setIsLoading(false)}
+				sizes=" 100vw"
+				onLoadingComplete={() => setIsLoading(false)}
 				className={cn(
 					'object-cover transition-opacity duration-300 ease-in-out',
 					isLoading ? 'opacity-0' : 'opacity-100'
