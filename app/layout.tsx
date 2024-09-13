@@ -38,9 +38,9 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className="h-screen w-screen relative overflow-hidden">
+			className="h-screen w-screen relative overflow-auto">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} overflow-auto  h-screen w-screen bg-background antialiased`}>
+				className={`${geistSans.variable} ${geistMono.variable}  w-screen bg-background antialiased`}>
 				<ModalProvider>
 					<ModalContainer />
 					<Navbar />

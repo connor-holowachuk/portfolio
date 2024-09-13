@@ -89,7 +89,7 @@ const ProjectTypeCard = ({
 	url,
 }: ProjectType & { index: number }) => {
 	return (
-		<div className="cursor-pointer flex flex-col group h-full hover:bg-primary text-white hover:text-background transition-all border-b border-border border-dashed lg:border-b-0  ease-in-outtransition-all duration-200 ease-in-out relative">
+		<div className="cursor-pointer flex flex-col group h-full hover:bg-primary text-white hover:text-background transition-all border-b border-border border-dashed lg:border-b-0 ease-in-outtransition-all duration-200 ease-in-out relative">
 			{index === 1 && <SectionCross />}
 
 			<div className="w-full px-12 py-12  flex flex-row items-center justify-between">
