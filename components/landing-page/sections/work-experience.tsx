@@ -22,7 +22,7 @@ const WorkExperienceSection: React.FC<
 				width={1}
 				borderRight
 				className="col-span-1 sticky top-0 h-screen z-0">
-				<div className="w-full h-full flex flex-col justify-center px-12 py-12 relative">
+				<div className="w-full h-full flex flex-col justify-center px-4 md:px-12 py-12 relative">
 					<SectionCross />
 					<Label variant="body" color="muted">
 						Past & Present

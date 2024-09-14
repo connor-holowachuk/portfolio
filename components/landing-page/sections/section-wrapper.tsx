@@ -30,7 +30,7 @@ const Column: React.FC<ColumnProps> = ({
 				borderLeft && 'border-l',
 				borderRight && 'border-r',
 				(borderLeft || borderRight) &&
-					'border-border border-dashed'
+					'lg:border-border lg:border-dashed border-none'
 			)}>
 			{children}
 		</div>

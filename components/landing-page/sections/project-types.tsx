@@ -36,7 +36,7 @@ const projectTypes: ProjectType[] = [
 		description:
 			'My passion for electrical engineering lies in the design and implementation of innovative solutions that address real-world challenges. I thrive on turning complex technical problems into simple, elegant solutions.',
 		icon: <Cpu size={48} />,
-		url: '/software',
+		url: '/engineering',
 		dateRange: '2020 - 2024',
 	},
 	{

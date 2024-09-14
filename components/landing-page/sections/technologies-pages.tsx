@@ -73,12 +73,12 @@ const TechnologyGroupBlock = ({
 }) => {
 	return (
 		<div className="w-full border-t border-border pt-6 pb-12 flex flex-col items-center gap-4">
-			<div className="flex flex-row w-full">
-				<Label variant="title2" className="w-1/2">
+			<div className="flex flex-col md:flex-row w-full">
+				<Label variant="title2" className="w-full md:w-1/2">
 					{group.title}
 				</Label>
 				{group.description ? (
-					<div className="w-1/2 flex flex-row items-center justify-end text-right">
+					<div className="w-full md:w-1/2 flex flex-row items-center md:justify-end justify-start md:text-right text-left">
 						<Label
 							variant="helper"
 							color="muted"
@@ -93,7 +93,7 @@ const TechnologyGroupBlock = ({
 				className={cn(
 					'w-full ',
 					group.splitColumns
-						? 'grid grid-cols-2'
+						? 'grid md:grid-cols-2 grid-cols-1'
 						: 'flex flex-col'
 				)}>
 				{group.technologies.map((technology: Technology) => {
@@ -132,12 +132,12 @@ const TechnologyCell = ({
 	return (
 		<div
 			key={technology.title}
-			className="w-full flex flex-col  py-1">
+			className="w-full flex flex-col py-2.5 md:py-1">
 			<div className="flex flex-row items-center gap-4">
 				<ChevronRight size={16} className="text-accent" />
 				<Label variant="title3">{technology.title}</Label>
 			</div>
-			<div className="items-center justify-between flex w-full pl-8">
+			<div className="md:items-center justify-between flex flex-col md:flex-row w-full pl-8">
 				<Label variant="default" color="muted">
 					{yearsOfExperience < 1
 						? 'Less than 1'
