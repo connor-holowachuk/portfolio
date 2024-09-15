@@ -20,7 +20,7 @@ type NavbarItem = {
 };
 const NavbarItems: NavbarItem[] = [
 	{
-		href: '/hardware',
+		href: '/engineering',
 		label: 'Hardware',
 	},
 	{

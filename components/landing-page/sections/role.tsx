@@ -39,7 +39,7 @@ const Role: React.FC<RoleProps> = async ({
 				/>
 			</Column>
 			<Column width={2} className=" flex flex-col gap-12">
-				<div className="flex flex-col gap-4 justify-center h-full px-12 py-12">
+				<div className="flex flex-col gap-4 justify-center h-full px-4 md:px-12 py-12">
 					<Label variant="titleLg">My Role</Label>
 					<Label
 						variant="title"

@@ -4,18 +4,20 @@ import { OptimizedImage } from '@/components/ui/optimized-image';
 import { Label } from '@/components/ui/label';
 import { TextEffect } from '@/components/ui/text-effect';
 import { cn } from '@/lib/utils';
-
+import ProjectCardTag from '@/components/landing-page/sections/project-card-tag';
 // Define and import types
 type HeroSectionProps = {
 	title: string;
 	imageSrc: string;
 	imagePlaceholderSrc: string;
+	tags?: string[];
 };
 
 const HeroSmallSection: React.FC<HeroSectionProps> = ({
 	title,
 	imageSrc,
 	imagePlaceholderSrc,
+	tags,
 }) => {
 	const titleSizeClassNames =
 		'text-[60px] h-[46px] md:text-[100px]  md:leading-[100px] lg:leading-[120px] lg:text-[140px]';
@@ -34,7 +36,7 @@ const HeroSmallSection: React.FC<HeroSectionProps> = ({
 						/>
 					</div>
 					<div className="absolute z-50 h-1/6 w-full bg-gradient-to-t bottom-0 from-background to-background/0" />
-					<div className="absolute z-50 h-full w-2/3 bg-gradient-to-r top-0 from-background/50 to-background/0" />
+					<div className="absolute z-50 h-full w-2/3 bg-gradient-to-r top-0 from-background/70 to-background/0" />
 					<div
 						className="gradient-blur z-20"
 						style={{ height: '16.67%', zIndex: 20 }}>
@@ -50,8 +52,17 @@ const HeroSmallSection: React.FC<HeroSectionProps> = ({
 
 			<div className="relative z-10 h-full inset-0 bg-black bg-opacity-20">
 				{/* Content overlay */}
-				<div className="container max-w-7xl mx-auto h-full flex flex-col justify-end pb-32 md:pb-32 px-4 md:px-8 lg:px-4 xl:px-0">
+				<div className="container max-w-7xl mx-auto h-full flex flex-col justify-end pb-32 md:pb-32 px-4 md:px-8 lg:px-8 xl:px-2">
 					<div className="text-white text-left flex flex-col w-full md:w-2/3">
+						<div className="flex flex-wrap gap-1  mb-4">
+							{tags?.map((tag) => (
+								<ProjectCardTag
+									tag={tag}
+									key={tag}
+									variant="accent"
+								/>
+							))}
+						</div>
 						<Label
 							variant="title"
 							className={cn(

@@ -50,8 +50,23 @@ const ProjectsSection: React.FC<ProjectsProps> = ({
 					</Label>
 				</div>
 			</Column>
-			<Column width={2} className="flex flex-col">
-				<div className="w-full flex flex-col gap-16 px-12 py-48">
+			<Column
+				width={2}
+				className=" flex flex-col bg-background lg:bg-transparent">
+				<div className="w-full h-[250px] relative z-10 block lg:hidden">
+					<div
+						className="gradient-blur absolute z-0"
+						style={{ height: '100%' }}>
+						<div />
+						<div />
+						<div />
+						<div />
+						<div />
+						<div />
+					</div>
+					<div className="absolute z-10 w-full h-full bg-gradient-to-b from-background/0 to-background" />
+				</div>
+				<div className="w-full flex flex-col gap-6 md:gap-12 lg:gap-16 px-4 md:px-12 py-48 bg-background relative z-10 lg:bg-transparent">
 					{getProjects().map(
 						(item: Project, index: number) => (
 							<ProjectCard

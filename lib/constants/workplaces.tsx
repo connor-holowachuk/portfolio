@@ -52,6 +52,8 @@ export const WorkExperienceData: WorkExperience[] = [
 			siteUrl: 'https://www.exacttechnology.com/',
 		},
 		projectsIds: [
+			'exact-satellite-logger',
+			'exact-temperature-logger',
 			'exact-exact-match-1',
 			'exact-exact-match-2',
 			'exact-pcb-antenna-tuning',

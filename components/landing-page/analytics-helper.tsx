@@ -7,9 +7,13 @@ import { trackEvent } from '@/server/actions/analytics';
 // Define and import types
 type AnalyticsHelperProps = {
 	pageName: string;
+	pageData?: any;
 };
 
-const AnalyticsHelper = ({ pageName }: AnalyticsHelperProps) => {
+const AnalyticsHelper = ({
+	pageName,
+	pageData,
+}: AnalyticsHelperProps) => {
 	useEffect(() => {
 		const fetchAnalytics = async () => {
 			try {
@@ -39,6 +43,7 @@ const AnalyticsHelper = ({ pageName }: AnalyticsHelperProps) => {
 						...data,
 						location: undefined,
 						...locData,
+						...pageData,
 					});
 				}
 			} catch (err: any) {

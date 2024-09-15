@@ -61,7 +61,7 @@ const WorkplacePageWrapper = async ({
 				</div>
 				<div className="relative z-40 h-full inset-0 bg-black bg-opacity-20">
 					{/* Content overlay */}
-					<div className="container max-w-7xl mx-auto h-full flex flex-col justify-center pt-12">
+					<div className="container max-w-7xl mx-auto h-full flex flex-col justify-center pt-12 px-4 md:px-8 lg:px-8 xl:px-2">
 						<div className="text-white text-left flex flex-col">
 							<Image
 								src={
@@ -91,8 +91,8 @@ const WorkplacePageWrapper = async ({
 				</div>
 			</div>
 			<div className="w-full border-b border-border border-dashed">
-				<div className="container max-w-7xl mx-auto grid grid-cols-2 py-32 ">
-					<div className="grid-span-1">
+				<div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 py-32 px-4 md:px-8 lg:px-8 xl:px-2">
+					<div className="grid-span-1 pr-0 md:pr-12 pb-12 md:pb-0">
 						<Label variant="titleLg">
 							Company Overview
 						</Label>

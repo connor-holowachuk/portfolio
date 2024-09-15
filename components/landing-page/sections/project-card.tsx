@@ -5,6 +5,7 @@ import { Label } from '@/components/ui/label';
 import { Project } from '@/lib/types';
 import Link from 'next/link';
 import { OptimizedImage } from '@/components/ui/optimized-image';
+import ProjectCardTag from './project-card-tag';
 
 import { ArrowRight } from 'lucide-react';
 
@@ -61,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
 	return (
 		<div
-			className="group project-card-border relative flex-row p-[1px] rounded-sm h-[500px] w-full bg-border/50 overflow-hidden transition-all duration-300 ease-in-out"
+			className="group project-card-border relative flex-row p-[1px] rounded-sm h-auto md:h-[500px] w-full bg-border/50 overflow-hidden transition-all duration-300 ease-in-out"
 			style={
 				{
 					'--project-color-border':
@@ -69,7 +70,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 				} as React.CSSProperties
 			}>
 			<div
-				className="project-card relative z-10 w-full h-full rounded-sm bg-[#0E0E0E] p-8 grid grid-cols-2 overflow-hidden"
+				className="project-card relative z-10 w-full h-full rounded-sm bg-[#0E0E0E] p-4  md:p-8 grid grid-cols-1 md:grid-cols-2 overflow-hidden"
 				style={
 					{
 						'--project-color': project.color ?? '#FC5F2B',
@@ -77,8 +78,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 				}>
 				<Link
 					href={projectUri}
-					className=" border-r border-white/5 h-full pr-8 relative z-10">
-					<div className="group-hover:scale-110 w-full h-full rounded-sm border border-border overflow-hidden shadow-lg  transition-all duration-200 ease-in-out">
+					className=" border-b md:border-r border-white/5 h-[300px] md:h-full w-full md:w-auto md:pr-8 pb-4 md:pb-0 relative z-10">
+					<div className="md:group-hover:scale-110 w-full h-full rounded-sm border border-border overflow-hidden shadow-lg  transition-all duration-200 ease-in-out">
 						<OptimizedImage
 							src={
 								project.thumbnailUrl ??
@@ -95,7 +96,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 						/>
 					</div>
 				</Link>
-				<div className="relative z-10 pl-8 flex flex-col gap-2 py-4">
+				<div className="relative z-10 px-2 md:pl-8 md:pr-0 flex flex-col gap-2 py-4">
 					{project.date && (
 						<Label
 							variant="body"
@@ -122,7 +123,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 					</div>
 					<Link
 						href={projectUri}
-						className="flex flex-row items-center gap-2 hover:text-accent text-white/50 hover:bg-accent/20 rounded-sm px-2 w-auto mr-auto transition-all duration-200 ease-in-out">
+						className="flex flex-row items-center gap-2 mt-4 md:mt-0 hover:text-accent text-white/50 hover:bg-accent/20 bg-white/10 rounded-sm px-2 w-auto mr-auto transition-all duration-200 ease-in-out">
 						<Label
 							variant="body"
 							className="font-normal text-auto"
@@ -145,22 +146,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 };
 
 export default ProjectCard;
-
-const ProjectCardTag: React.FC<{ tag: string }> = ({ tag }) => {
-	const tagString =
-		tag.charAt(0).toUpperCase() + tag.slice(1).toLowerCase();
-	return (
-		<Link
-			href={`/tags/${tag.toLowerCase()}`}
-			key={tag}
-			className="flex flex-row items-center gap-4 rounded-full border px-2 h-5 bg-white/10 border-border text-white/50 hover:bg-accent/20 hover:text-accent hover:border-accent cursor-auto transition-all duration-200 ease-in-out">
-			<Label
-				variant="helper"
-				color="muted"
-				className="font-normal hover:text-accent"
-				cursor="pointer">
-				{tagString}
-			</Label>
-		</Link>
-	);
-};
