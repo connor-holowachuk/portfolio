@@ -4,6 +4,7 @@ import HeroSmallSection from '@/components/landing-page/sections/hero-small';
 import PageNotFound from '@/components/landing-page/sections/page-not-found';
 import AnalyticsHelper from '@/components/landing-page/analytics-helper';
 import { ProjectData } from '@/lib/constants';
+import ProjectPageWrapper from '@/components/landing-page/project-pages/project-page-wrapper';
 
 type Props = {
 	params: { id: string };
@@ -27,21 +28,31 @@ export default function ProjectPage({ params }: Props) {
 		<div className="bg-background relative flex  w-screen flex-col items-center justify-between">
 			<AnalyticsHelper
 				pageName="Project Page"
-				pageData={{ id: project?.id ?? '' }}
+				pageData={{ id: project?.id ?? 'none' }}
 			/>
-			<HeroSmallSection
-				title={project?.title ?? ''}
-				imageSrc={
-					project?.page?.heroImageSrc ??
-					'/images/project-types/electrical-engineering.jpeg'
-				}
-				imagePlaceholderSrc={
-					project?.page?.placeholderHeroImageSrc ??
-					'/images/project-types/electrical-engineering-sm.png'
-				}
-				tags={project?.tags ?? []}
-			/>
-			{project?.page?.element ?? <PageNotFound id={id} />}
+			{project?.page ? (
+				<ProjectPageWrapper
+					project={project}
+					header={
+						<HeroSmallSection
+							title={project?.title ?? ''}
+							imageSrc={
+								project?.page?.heroImageSrc ??
+								'/images/project-types/electrical-engineering.jpeg'
+							}
+							imagePlaceholderSrc={
+								project?.page
+									?.placeholderHeroImageSrc ??
+								'/images/project-types/electrical-engineering-sm.png'
+							}
+							tags={project?.tags ?? []}
+						/>
+					}
+					children={project?.page?.element ?? <></>}
+				/>
+			) : (
+				<PageNotFound id={id} />
+			)}
 		</div>
 	);
 }

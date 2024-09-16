@@ -11,12 +11,15 @@ const SatelliteLogger: Project = {
 		ProjectTag.SOFTWARE,
 		ProjectTag.FIRMWARE,
 	],
+	date: '2021-2022',
 	thumbnailBlurUrl:
 		'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	thumbnailUrl:
 		'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	page: {
 		element: <div>Hello</div>,
+		summary:
+			'Concrete curing is not limited to geographical regions that have ready access to internet. Remote sites demanded a solution that would allow for data to be logged and sent to a central location without the need for internet access. The Satellite Logger is a rugged and portable device that is mounted on a satellite modem and is able to log data and send it to a central location when the modem is able to connect to the internet.',
 		heroImageSrc:
 			'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 		placeholderHeroImageSrc:
@@ -108,6 +111,8 @@ const CraneAvoidance: Project = {
 	],
 	page: {
 		element: <div>Hello</div>,
+		summary:
+			'The Crane Avoidance System is a safety feature designed to prevent collisions between cranes and other structures. The system uses a combination of sensors and software to detect the presence of other cranes and other structures and to provide a warning to the operator.',
 		heroImageSrc:
 			'https://images.unsplash.com/photo-1516971849755-77ddd3e004b0?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 		placeholderHeroImageSrc:

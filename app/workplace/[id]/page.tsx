@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
 import PageNotFound from '@/components/landing-page/sections/page-not-found';
+import AnalyticsHelper from '@/components/landing-page/analytics-helper';
 
 type Props = {
 	params: { id: string };
@@ -26,6 +27,10 @@ export default function WorkplacePage({ params }: Props) {
 
 	return (
 		<div className="bg-background relative flex  w-screen flex-col items-center justify-between">
+			<AnalyticsHelper
+				pageName="Workplace Page"
+				pageData={{ id: workplace?.id ?? 'none' }}
+			/>
 			{workplace?.page?.element ?? <PageNotFound id={id} />}
 		</div>
 	);

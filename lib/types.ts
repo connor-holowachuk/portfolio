@@ -33,6 +33,7 @@ export type Project = {
     date?: string;
     page?: {
         element: React.ReactNode;
+        summary: string;
         heroImageSrc: string;
         placeholderHeroImageSrc: string;
         headerLogoSrc: string;

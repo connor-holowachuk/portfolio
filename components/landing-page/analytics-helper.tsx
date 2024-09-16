@@ -54,9 +54,16 @@ const AnalyticsHelper = ({
 			}
 		};
 
-		if (process.env.LOG_ANALYTICS === 'true') {
-			fetchAnalytics();
-		}
+		setTimeout(() => {
+			if (process.env.LOG_ANALYTICS === 'true') {
+				fetchAnalytics();
+			} else {
+				console.log(
+					'Analytics disabled',
+					process.env.LOG_ANALYTICS
+				);
+			}
+		}, 1000);
 	}, []);
 	return <div className=""></div>;
 };

@@ -11,8 +11,16 @@ const ProjectCardTag: React.FC<ProjectCardTagProps> = ({
 	tag,
 	variant = 'default',
 }) => {
-	const tagString =
-		tag.charAt(0).toUpperCase() + tag.slice(1).toLowerCase();
+	const tagWords = tag.split('_');
+	const tagString = tagWords
+		.map(
+			(word) =>
+				word.charAt(0).toUpperCase() +
+				word.slice(1).toLowerCase()
+		)
+		.join(' ');
+	// tagWords.charAt(0).toUpperCase() +
+	// tagWords.slice(1).toLowerCase();
 	return (
 		<Link
 			href={`/tags/${tag.toLowerCase()}`}

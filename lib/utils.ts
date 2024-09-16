@@ -1,5 +1,8 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import * as dotenv from "dotenv";
+
+dotenv.config({ path: ".env" });
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));

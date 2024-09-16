@@ -99,7 +99,7 @@ const Navbar = ({}: HeaderProps) => {
 					<div className="hidden lg:flex lg:gap-x-12 relative z-50"></div>
 					<div className="hidden items-center md:flex md:flex-1 md:justify-end relative z-50">
 						<Link
-							href="/get-started"
+							href="mailto:holowachukc@gmail.com"
 							className="flex cursor-pointer flex-row items-center justify-center rounded-xs bg-accent px-6 py-3 shadow-none transition-all duration-200 hover:bg-accent-foreground hover:shadow-lg">
 							<Label className="text-sm cursor-pointer font-mono font-normal text-white">
 								Let's chat
@@ -162,7 +162,7 @@ const Navbar = ({}: HeaderProps) => {
 							</div>
 							<div className="gap-4 gap-y-4 py-6">
 								<Link
-									href="mailto:holowachuk@gmail.com"
+									href="mailto:holowachukc@gmail.com"
 									className=" mt-4 block rounded-xs mx-2 bg-accent px-4 py-2.5 text-base text-center font-semibold leading-7 text-white">
 									Let's Chat
 								</Link>

@@ -49,5 +49,8 @@ module.exports = {
 	},
 	env: {
 		DATABASE_URL: process.env.DATABASE_URL,
+		LOG_ANALYTICS: process.env.LOG_ANALYTICS,
+		ENV_MODE: process.env.ENV_MODE,
+		MIXPANEL_TOKEN: process.env.MIXPANEL_TOKEN,
 	},
 };

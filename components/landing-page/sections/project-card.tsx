@@ -78,7 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 				}>
 				<Link
 					href={projectUri}
-					className=" border-b md:border-r border-white/5 h-[300px] md:h-full w-full md:w-auto md:pr-8 pb-4 md:pb-0 relative z-10">
+					className=" border-b md:border-b-0 md:border-r border-white/5 h-[300px] md:h-full w-full md:w-auto md:pr-8 pb-4 md:pb-0 relative z-10">
 					<div className="md:group-hover:scale-110 w-full h-full rounded-sm border border-border overflow-hidden shadow-lg  transition-all duration-200 ease-in-out">
 						<OptimizedImage
 							src={
