@@ -27,7 +27,7 @@ export const ModalContainer: React.FC = () => {
 		useModal();
 
 	return (
-		<Dialog open={isOpen} onOpenChange={closeModal}>
+		<Dialog>
 			<DialogContent>
 				{ModalComponent && (
 					<ModalComponent
