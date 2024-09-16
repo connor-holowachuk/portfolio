@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import HeroSection from '@/components/landing-page/sections/hero';
 import WorkplaceScroller from '@/components/landing-page/sections/workplace-scroller';
 import About from '@/components/landing-page/sections/about';
+import Showcase from '@/components/landing-page/sections/showcase';
 import ProjectTypes from '@/components/landing-page/sections/project-types';
 import WorkExperience from '@/components/landing-page/sections/work-experience';
 import Education from '@/components/landing-page/sections/education';
@@ -25,15 +26,14 @@ export default function Home({ searchParams }: SearchParamProps) {
 	return (
 		<main className="bg-background relative flex w-screen flex-col items-center justify-between">
 			<AnalyticsHelper pageName="Home" />
-			{/* <div className="flex w-full max-w-full flex-col"> */}
 			<HeroSection />
 			<WorkplaceScroller />
 			<About />
+			<Showcase />
 			<ProjectTypes />
 			<WorkExperience />
 			<Education />
 			<Technologies />
-			{/* </div> */}
 		</main>
 	);
 }

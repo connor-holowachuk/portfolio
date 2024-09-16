@@ -7,6 +7,7 @@ import { ProjectsBlackberry } from './blackberry';
 import { ProjectsWorkride } from './workride';
 import { ProjectsPaperdodo } from './paperdodo';
 import { PersonalProjects } from './personal';
+import { ProjectsUniversity } from './university';
 
 export const ProjectData: Project[] = [
 	...ProjectsExactTechnology,
@@ -17,4 +18,5 @@ export const ProjectData: Project[] = [
 	...ProjectsWorkride,
 	...ProjectsPaperdodo,
 	...PersonalProjects,
+	...ProjectsUniversity,
 ];

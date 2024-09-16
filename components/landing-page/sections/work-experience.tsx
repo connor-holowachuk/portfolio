@@ -58,7 +58,9 @@ const WorkExperienceSection: React.FC<
 					<div className="absolute z-10 w-full h-full bg-gradient-to-b from-background/0 to-background" />
 				</div>
 				<div className="w-full flex flex-col gap-6 md:gap-12 lg:gap-16 px-4 md:px-12 py-48 bg-background relative z-10 lg:bg-transparent">
-					{WorkExperienceData.map((item, index) => (
+					{WorkExperienceData.filter(
+						(item) => !item.hideCard
+					).map((item, index) => (
 						<WorkExperienceCard
 							key={`card-${index}`}
 							{...item}

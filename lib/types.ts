@@ -17,11 +17,13 @@ export enum ProjectTag {
     PROTOTYPING = "PROTOTYPING",
     SOLDERING = "SOLDERING",
     TESTING = "TESTING",
+    STARTUP = "STARTUP",
 }
 
 export type Project = {
     title: string;
     id: string;
+    companyId: string;
     description: string;
     color?: string;
     icon?: React.ReactNode;
@@ -60,7 +62,8 @@ export type WorkExperience = {
         infoBlurb: string;
         siteUrl: string;
     };
-    projectsIds?: string[];
+    hideCard?: boolean;
+    // projectsIds?: string[];
 };
 
 export type Technology = {

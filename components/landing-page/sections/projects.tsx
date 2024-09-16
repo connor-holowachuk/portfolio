@@ -20,11 +20,18 @@ const ProjectsSection: React.FC<ProjectsProps> = ({
 }) => {
 	const getProjects = () => {
 		if (projects && projects.length > 0) return projects;
-		const workExperienceProjectsIds = workExperience.projectsIds;
-		const workExperienceProjects = ProjectData.filter((project) =>
-			workExperienceProjectsIds?.includes(project.id)
+
+		const workplaceId = workExperience.id;
+		const p = ProjectData.filter(
+			(project) => project.companyId === workplaceId
 		);
-		return workExperienceProjects;
+		return p;
+		// if (projects && projects.length > 0) return projects;
+		// const workExperienceProjectsIds = workExperience.projectsIds;
+		// const workExperienceProjects = ProjectData.filter((project) =>
+		// 	workExperienceProjectsIds?.includes(project.id)
+		// );
+		// return workExperienceProjects;
 	};
 
 	return (

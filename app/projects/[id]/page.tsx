@@ -47,9 +47,9 @@ export default function ProjectPage({ params }: Props) {
 							}
 							tags={project?.tags ?? []}
 						/>
-					}
-					children={project?.page?.element ?? <></>}
-				/>
+					}>
+					{project?.page?.element ?? <></>}
+				</ProjectPageWrapper>
 			) : (
 				<PageNotFound id={id} />
 			)}
