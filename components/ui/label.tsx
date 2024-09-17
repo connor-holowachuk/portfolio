@@ -16,6 +16,8 @@ const labelVariants = cva(
 					'text-[70px] leading-[60px] font-medium tracking-tighter',
 				titleLg:
 					'text-[58px] leading-[46px] font-medium tracking-tighter',
+				titleLgResponsive:
+					'text-[42px] leading-[54px] font-medium tracking-tighter md:text-[58px] md:leading-[70px]',
 				title: 'text-3xl font-medium tracking-tighter',
 				title2: 'text-2xl font-medium ',
 				title3: 'text-xl font-medium ',

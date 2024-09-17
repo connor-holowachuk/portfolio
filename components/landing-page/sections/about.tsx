@@ -65,8 +65,8 @@ const About = async () => {
 
 					<InViewTextWrapper>
 						<Label
-							variant="titleLg"
-							className="font-normal leading-normal"
+							variant="titleLgResponsive"
+							className="font-normal "
 							color="muted">
 							I'm an{' '}
 							<InlineLink href="/engineering">
@@ -90,8 +90,8 @@ const About = async () => {
 					</InViewTextWrapper>
 					<InViewTextWrapper>
 						<Label
-							variant="titleLg"
-							className="font-normal text-center leading-normal"
+							variant="titleLgResponsive"
+							className="font-normal "
 							color="muted">
 							Since 2014, I've built a wide range of
 							products, startups, and side projects from{' '}
@@ -107,8 +107,8 @@ const About = async () => {
 					</InViewTextWrapper>
 					<InViewTextWrapper>
 						<Label
-							variant="titleLg"
-							className="font-normal text-center leading-normal"
+							variant="titleLgResponsive"
+							className="font-normal "
 							color="muted">
 							While formally trained as an Electrical
 							Engineer, the endless possibilities when{' '}
@@ -132,8 +132,8 @@ const About = async () => {
 					</InViewTextWrapper>
 					<InViewTextWrapper>
 						<Label
-							variant="titleLg"
-							className="font-normal text-center leading-normal"
+							variant="titleLgResponsive"
+							className="font-normal"
 							color="muted">
 							I hope you're as excited as I am to build{' '}
 							<InlineCallout>

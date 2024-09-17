@@ -44,7 +44,16 @@ export const ParallaxScroll = ({
 
 	return (
 		<div className={cn(' items-start  w-full', className)}>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-full mx-auto gap-10 py-40 px-10">
+			<div className="w-full flex md:hidden flex-col gap-6 px-4 py-32">
+				{projects.map((project, idx) => (
+					<ProjectCard
+						project={project}
+						style={translateFirst}
+						key={'grid-1' + idx}
+					/>
+				))}
+			</div>
+			<div className="md:grid hidden md:grid-cols-2 lg:grid-cols-3 items-start max-w-full mx-auto gap-10 py-40 px-10">
 				<div className="grid gap-10">
 					{firstPart.map((el, idx) => (
 						<ProjectCard
@@ -110,7 +119,7 @@ const ProjectCard = ({
 				viewOptions={{ margin: '0px 0px -100px 0px' }}
 				transition={{ duration: 0.9, ease: 'easeInOut' }}>
 				<div className="h-80 w-full rounded-lg overflow-hidden group cursor-pointer">
-					<div className="absolute block lg:hidden top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent group-hover:bg-black/50 transition-all duration-300 group-hover:backdrop-blur-sm z-10"></div>
+					<div className="absolute block lg:hidden top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent group-hover:bg-black/50 transition-all duration-300 lg:group-hover:backdrop-blur-sm z-10"></div>
 					<div className="absolute hidden lg:block top-0 left-0 w-full h-full bg-black/5 group-hover:bg-black/50 transition-all duration-300 group-hover:backdrop-blur-sm z-10"></div>
 					<Link
 						href={`/projects/${project.id}`}
@@ -134,7 +143,7 @@ const ProjectCard = ({
 					</Link>
 					<Image
 						src={project.thumbnailUrl || ''}
-						className="group-hover:scale-110 transition-all duration-300 w-full h-full object-cover  gap-10 !m-0 !p-0 relative z-0 rounded-lg"
+						className="lg:group-hover:scale-110 transition-all duration-300 w-full h-full object-cover  gap-10 !m-0 !p-0 relative z-0 rounded-lg"
 						height="400"
 						width="400"
 						alt="thumbnail"

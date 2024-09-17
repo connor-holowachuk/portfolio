@@ -50,7 +50,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 				</div>
 			</div>
 
-			<div className="relative z-10 h-full inset-0 bg-black bg-opacity-20">
+			<div className="relative z-10 h-full inset-0 md:bg-black md:bg-opacity-20">
 				{/* Content overlay */}
 				<div className="container max-w-7xl mx-auto h-full flex flex-col justify-end pb-32 md:pb-24 px-4 md:px-8 lg:px-4 xl:px-0">
 					<div className="text-white text-left flex flex-col">
