@@ -20,6 +20,112 @@ export enum ProjectTag {
     STARTUP = "STARTUP",
 }
 
+export enum SoftwareTechnologyOption {
+    NEXTJS = "next",
+    REACT = "react",
+    TAILWIND = "tailwind",
+    SHADCN = "shadcn",
+    STRIPE = "stripe",
+    PYTHON = "python",
+    DJANGO = "django",
+    EXPRESS = "express",
+    NODE = "node",
+    POSTGRESQL = "postgresql",
+    MYSQL = "mysql",
+    MONGODB = "mongodb",
+    SQLITE = "sqlite",
+    OPENAI = "openai",
+    GROQ = "groq",
+    CARTESIA = "cartesia",
+    DENO = "deno",
+}
+
+export type SoftwareTechnologyOptionType = {
+    type: SoftwareTechnologyOption;
+    title: string;
+    iconUrl: string;
+    link?: string;
+};
+
+export type PageSection =
+    | ImageGallerySection
+    | ImageLargeSection
+    | InfoSection
+    | ListSection
+    | VideoLargeSection
+    | YoutubeLargeSection
+    | OtherProjectsSection
+    | SoftwareTechnologiesSection;
+
+export type ImageGalleryImage = {
+    src: string;
+    srcBlur?: string;
+    alt: string;
+    captionHeader?: string;
+    caption?: string;
+};
+
+export type ImageGallerySection = {
+    type: "image-gallery";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    images: ImageGalleryImage[];
+};
+
+export type ImageLargeSection = {
+    type: "image-large";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    src: string;
+    alt: string;
+};
+
+export type VideoLargeSection = {
+    type: "video-large";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    src: string;
+    alt: string;
+};
+
+export type YoutubeLargeSection = {
+    type: "youtube-large";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    src: string;
+    alt: string;
+};
+
+export type OtherProjectsSection = {
+    type: "other-projects";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    projectIds: string[];
+};
+
+export type SoftwareTechnologiesSection = {
+    type: "software-technologies";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    technologyOptions: SoftwareTechnologyOption[];
+};
+
+export type InfoSection = {
+    type: "info";
+    content: string;
+};
+
+export type ListSection = {
+    type: "list";
+    items: string[];
+};
+
 export type Project = {
     title: string;
     id: string;
@@ -34,13 +140,14 @@ export type Project = {
     tags: ProjectTag[];
     date?: string;
     page?: {
-        element: React.ReactNode;
+        element?: React.ReactNode;
         summary: string;
         heroImageSrc: string;
         placeholderHeroImageSrc: string;
         headerLogoSrc: string;
         infoBlurb: string;
         siteUrl: string;
+        sections: PageSection[];
     };
 };
 
@@ -61,6 +168,7 @@ export type WorkExperience = {
         headerLogoSrc: string;
         infoBlurb: string;
         siteUrl: string;
+        projectsDescription?: string;
     };
     hideCard?: boolean;
     // projectsIds?: string[];

@@ -42,22 +42,22 @@ const Role: React.FC<RoleProps> = async ({
 				<div className="flex flex-col gap-4 justify-center h-full px-4 md:px-12 py-12">
 					<Label variant="titleLg">My Role</Label>
 					<Label
-						variant="title"
+						variant="title2"
 						color="muted"
 						className="font-normal">
 						{description}
 					</Label>
-					<div className="flex flex-col gap-2">
+					<div className="flex flex-col gap-2 py-4">
 						{points.map((point, index) => (
 							<div
 								className="flex flex-row items-center gap-4"
 								key={index}>
 								<ChevronRight
 									size={20}
-									className="text-accent"
+									className="text-accent w-6 min-w-6"
 								/>
 								<Label
-									variant="title2"
+									variant="title3"
 									color="muted"
 									className="font-normal">
 									{point}

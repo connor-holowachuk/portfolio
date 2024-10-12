@@ -2,11 +2,7 @@ import React from 'react';
 
 // Import components
 import { Label } from '@/components/ui/label';
-import { InView } from '@/components/ui/in-view';
-import {
-	Section,
-	Column,
-} from '@/components/landing-page/sections/section-wrapper';
+import { ArrowRight } from 'lucide-react';
 
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import Link from 'next/link';
@@ -44,6 +40,17 @@ const Showcase = async () => {
 			<div className="w-full px-0 py-24">
 				<ParallaxScroll projects={projects} />
 			</div>
+			<Link
+				href="/projects"
+				className="px-4 group py-2 mb-24 items-center text-accent justify-center flex flex-row">
+				<Label
+					variant="default"
+					color="accent"
+					underline="group-hover">
+					View All Projects
+				</Label>
+				<ArrowRight className="w-4 h-4 ml-2" />
+			</Link>
 		</div>
 	);
 };

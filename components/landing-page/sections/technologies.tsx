@@ -26,10 +26,11 @@ const Technologies = () => (
 						variant="title3"
 						color="muted"
 						className="mt-8 font-normal">
-						Dolor sit aute voluptate magna. Sunt velit
-						culpa sint eu in pariatur duis ex culpa id
-						est. Velit incididunt ad culpa irure nisi
-						consectetur minim dolore amet.
+						Having worked with hardware, firmware,
+						software, and design for over 10 years, I have
+						accumulated a diverse set of skills and
+						knowledge across various domains. Select a
+						technology to learn more.
 					</Label>
 					<TechnologiesTabs />
 				</div>

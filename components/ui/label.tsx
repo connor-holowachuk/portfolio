@@ -38,6 +38,7 @@ const labelVariants = cva(
 				warning: 'text-orange-500',
 				secondary: 'text-secondary',
 				white: 'text-white',
+				accent: 'text-accent',
 			},
 			font: {
 				serif: 'font-serif',
@@ -52,6 +53,12 @@ const labelVariants = cva(
 			cursor: {
 				pointer: 'cursor-pointer',
 				default: 'cursor-default',
+			},
+			underline: {
+				true: 'underline',
+				false: 'no-underline',
+				hover: 'hover:underline cursor-pointer',
+				'group-hover': 'group-hover:underline cursor-pointer',
 			},
 		},
 		defaultVariants: {
@@ -78,6 +85,7 @@ const Label = React.forwardRef<
 				font: props.font,
 				align: props.align,
 				cursor: props.cursor,
+				underline: props.underline,
 			}),
 			className
 		)}

@@ -191,7 +191,7 @@ const TechnologyChip = ({ workExperience }: TechnologyChipProps) => {
 				cursor="pointer">
 				{workExperience && 'company' in workExperience
 					? workExperience.company
-					: (workExperience?.title ?? 'bing')}
+					: (workExperience?.title ?? 'Personal')}
 			</Label>
 		</Link>
 	);

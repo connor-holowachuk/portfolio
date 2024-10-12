@@ -30,11 +30,13 @@ const ExactTechnologyPage = async () => {
 			<WorkplacePageWrapper experience={workplace}>
 				<div className="flex flex-col w-full">
 					<Role
-						description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+						description="I was employee number 9 at EXACT, leaving after 30+ employees. I worked alongside hardware team to design and manufacture LoRa-based environmental sensors, concrete curing chambers, internal tools, and more."
 						points={[
-							'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-							'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-							'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+							'Designed and managed manufacturing of high density PCBs for sensor nodes and gateways.',
+							'Optimize RF efficiency through antenna design and tuning.',
+							'Design and manage manufacturing of injection molded parts.',
+							'Worked alongside software team to seamlessly integrate hardware and software for sensor nodes and gateways.',
+							'Design and work with suppliers on custom laser cut acrylics for curing chambers.',
 						]}
 						imageSrc="/images/workplaces/exact-technology/role.jpeg"
 						placeholderImageSrc="/images/workplaces/exact-technology/role-sm.png"

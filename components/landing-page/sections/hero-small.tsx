@@ -10,6 +10,7 @@ type HeroSectionProps = {
 	title: string;
 	imageSrc: string;
 	imagePlaceholderSrc: string;
+	heading?: string;
 	tags?: string[];
 };
 
@@ -18,6 +19,7 @@ const HeroSmallSection: React.FC<HeroSectionProps> = ({
 	imageSrc,
 	imagePlaceholderSrc,
 	tags,
+	heading,
 }) => {
 	const titleSizeClassNames =
 		'text-[60px] h-[46px] md:text-[100px]  md:leading-[100px] lg:leading-[120px] lg:text-[140px]';
@@ -54,6 +56,14 @@ const HeroSmallSection: React.FC<HeroSectionProps> = ({
 				{/* Content overlay */}
 				<div className="container max-w-7xl mx-auto h-full flex flex-col justify-end pb-32 md:pb-32 px-4 md:px-8 lg:px-8 xl:px-2">
 					<div className="text-white text-left flex flex-col w-full md:w-2/3">
+						{heading && (
+							<Label
+								variant="title3"
+								font="mono"
+								className="text-white/70 font-light">
+								{heading}
+							</Label>
+						)}
 						<div className="flex flex-wrap gap-1  mb-4">
 							{tags?.map((tag) => (
 								<ProjectCardTag

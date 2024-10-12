@@ -1,17 +1,13 @@
 import { Project, ProjectTag } from '@/lib/types';
 
 export const PCBAntennaTuning: Project = {
-	title: 'PCB Antenna Tuning',
+	title: 'RF Antenna Tuning',
 	companyId: 'exact-technology',
 	id: 'exact-pcb-antenna-tuning',
 	description: 'Exact',
 	link: 'https://www.exact.com',
 	color: '#FC5F2B',
-	tags: [
-		ProjectTag.HARDWARE,
-		ProjectTag.SOFTWARE,
-		ProjectTag.FIRMWARE,
-	],
+	tags: [ProjectTag.HARDWARE, ProjectTag.PCBA],
 	thumbnailBlurUrl:
 		'/images/projects/exact-technology/antenna-tuning/relay-f-1.jpeg',
 	thumbnailUrl:

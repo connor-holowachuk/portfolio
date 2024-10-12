@@ -7,13 +7,22 @@ import Link from 'next/link';
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import ProjectCardTag from './project-card-tag';
 
+// Import icons
 import { ArrowRight } from 'lucide-react';
 
+// Import utils
+import { cn } from '@/lib/utils';
+
+// Import and declare types
 type ProjectCardProps = {
 	project: Project;
+	variant?: 'small' | 'large';
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+	project,
+	variant = 'large',
+}) => {
 	const projectTitleInitials = project.title
 		.split(' ')
 		.map((word) => word[0])
@@ -62,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
 	return (
 		<div
-			className="group project-card-border relative flex-row p-[1px] rounded-sm h-auto md:h-[500px] w-full bg-border/50 overflow-hidden transition-all duration-300 ease-in-out"
+			className="group project-card-border relative  p-[1px] rounded-sm h-auto md:h-[500px] w-full bg-border/50 overflow-hidden transition-all duration-300 ease-in-out"
 			style={
 				{
 					'--project-color-border':
@@ -70,7 +79,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 				} as React.CSSProperties
 			}>
 			<div
-				className="project-card relative z-10 w-full h-full rounded-sm bg-[#0E0E0E] p-4  md:p-8 grid grid-cols-1 md:grid-cols-2 overflow-hidden"
+				className={cn(
+					'project-card relative z-10 w-full h-full rounded-sm bg-[#0E0E0E]  grid  overflow-hidden',
+					variant === 'small'
+						? 'grid-cols-1 md:grid-cols-1 p-4 md:p-4'
+						: 'grid-cols-1 md:grid-cols-2 p-4 md:p-8'
+				)}
 				style={
 					{
 						'--project-color': project.color ?? '#FC5F2B',
@@ -78,8 +92,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 				}>
 				<Link
 					href={projectUri}
-					className=" border-b md:border-b-0 md:border-r border-white/5 h-[300px] md:h-full w-full md:w-auto md:pr-8 pb-4 md:pb-0 relative z-10">
-					<div className="md:group-hover:scale-110 w-full h-full rounded-sm border border-border overflow-hidden shadow-lg  transition-all duration-200 ease-in-out">
+					className={cn(
+						' border-white/5  md:h-full w-full  relative z-10',
+						variant === 'small'
+							? 'border-b border-r-0 w-full pb-8 mb-4 h-[200px] min-h-[200px]'
+							: 'border-b md:border-b-0 md:border-r md:w-auto md:pr-8 pb-4 md:pb-0 h-[300px]'
+					)}>
+					<div
+						className={cn(
+							' w-full h-full rounded-sm border border-border overflow-hidden shadow-lg  transition-all duration-200 ease-in-out',
+							variant === 'small'
+								? 'md:group-hover:scale-105'
+								: 'md:group-hover:scale-110'
+						)}>
 						<OptimizedImage
 							src={
 								project.thumbnailUrl ??
@@ -96,7 +121,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 						/>
 					</div>
 				</Link>
-				<div className="relative z-10 px-2 md:pl-8 md:pr-0 flex flex-col gap-2 py-4">
+				<div
+					className={cn(
+						'relative z-10 px-2  flex flex-col gap-2 py-4',
+						variant === 'small'
+							? 'md:pl-4 md:pr-4'
+							: 'md:pl-8 md:pr-0'
+					)}>
 					{project.date && (
 						<Label
 							variant="body"

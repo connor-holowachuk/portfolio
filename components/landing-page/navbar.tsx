@@ -37,7 +37,9 @@ const Navbar = ({}: HeaderProps) => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<header className="bg-background-dnai/20 fixed left-0 top-0 z-50 w-full h-20">
+		<header
+			className="bg-background-dnai/20 fixed left-0 top-0  w-full h-20"
+			style={{ zIndex: 60 }}>
 			<nav
 				aria-label="Global"
 				className="flex items-center justify-between py-3  relative w-full ">

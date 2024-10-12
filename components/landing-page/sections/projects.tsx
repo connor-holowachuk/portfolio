@@ -26,12 +26,6 @@ const ProjectsSection: React.FC<ProjectsProps> = ({
 			(project) => project.companyId === workplaceId
 		);
 		return p;
-		// if (projects && projects.length > 0) return projects;
-		// const workExperienceProjectsIds = workExperience.projectsIds;
-		// const workExperienceProjects = ProjectData.filter((project) =>
-		// 	workExperienceProjectsIds?.includes(project.id)
-		// );
-		// return workExperienceProjects;
 	};
 
 	return (
@@ -50,10 +44,8 @@ const ProjectsSection: React.FC<ProjectsProps> = ({
 						variant="title3"
 						color="muted"
 						className="mt-8 font-normal">
-						Dolor sit aute voluptate magna. Sunt velit
-						culpa sint eu in pariatur duis ex culpa id
-						est. Velit incididunt ad culpa irure nisi
-						consectetur minim dolore amet.
+						{workExperience.page?.projectsDescription ??
+							''}
 					</Label>
 				</div>
 			</Column>

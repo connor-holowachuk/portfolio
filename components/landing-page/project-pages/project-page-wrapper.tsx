@@ -56,45 +56,6 @@ const ProjectPageWrapper = async ({
 						</div>
 					</div>
 				</div>
-				<div className="w-full border-b border-border border-dashed">
-					<div className="container w-full max-w-7xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-3 py-32 px-4 md:px-8 lg:px-8 xl:px-2">
-						<div className="grid-span-1 flex flex-col gap-6">
-							<DialogBasicImage
-								src={
-									'/images/projects/exact-technology/satellite-logger/logger-open-1.jpeg'
-								}
-								alt={`${project.title} Project Thumbnail`}
-								className="w-full h-[260px] object-cover"
-							/>
-							<div className="flex flex-col gap-4">
-								<Label variant="title2">
-									Open Logger
-								</Label>
-								<Label variant="body" color="muted">
-									Satellite Logger
-								</Label>
-							</div>
-						</div>
-						<div className="grid-span-1">
-							<DialogBasicImage
-								src={
-									'/images/projects/exact-technology/satellite-logger/logger-open-2.jpeg'
-								}
-								alt={`${project.title} Project Thumbnail`}
-								className="w-full h-[260px] object-cover"
-							/>
-						</div>
-						<div className="grid-span-1">
-							<DialogBasicImage
-								src={
-									'/images/projects/exact-technology/satellite-logger/logger-prototype-1.jpeg'
-								}
-								alt={`${project.title} Project Thumbnail`}
-								className="w-full h-[260px] object-cover"
-							/>
-						</div>
-					</div>
-				</div>
 			</div>
 			{children}
 		</div>

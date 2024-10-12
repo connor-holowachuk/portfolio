@@ -252,14 +252,14 @@ function DialogContainer({ children }: DialogContainerProps) {
 				<>
 					<motion.div
 						key={`backdrop-${uniqueId}`}
-						className="fixed inset-0 z-50 h-full w-full bg-background/40 backdrop-blur-md dark:bg-black/40"
+						className="fixed inset-0 z-[150] h-full w-full bg-background/40 backdrop-blur-md dark:bg-black/40"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 					/>
 					<div
-						className="fixed inset-0 z-50 flex items-center justify-center"
-						style={{ zIndex: 100 }}>
+						className="fixed inset-0 z-[150] flex items-center justify-center"
+						style={{ zIndex: 150 }}>
 						{children}
 					</div>
 				</>

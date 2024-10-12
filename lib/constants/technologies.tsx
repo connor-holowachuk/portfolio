@@ -17,7 +17,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/nrf52840.png',
 						link: 'https://www.intel.com',
 						workExperienceIds: ['eigen-fitness'],
-						projectIds: ['personal'],
 						startYear: 2022,
 					},
 					{
@@ -29,7 +28,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'eigen-fitness',
 							'exact-technology',
 						],
-						projectIds: ['personal'],
 						startYear: 2022,
 					},
 					{
@@ -41,7 +39,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'eigen-fitness',
 							'exact-technology',
 						],
-						projectIds: ['personal'],
 						startYear: 2022,
 					},
 					{
@@ -50,7 +47,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/silicon-labs.png',
 						link: 'https://www.intel.com',
 						workExperienceIds: ['eigen-fitness'],
-						projectIds: ['personal'],
 						startYear: 2022,
 					},
 					{
@@ -59,7 +55,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/silicon-labs.png',
 						link: 'https://www.intel.com',
 						workExperienceIds: ['exact-technology'],
-						projectIds: ['personal'],
 						startYear: 2022,
 					},
 					{
@@ -68,7 +63,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/nrf52840.png',
 						link: 'https://www.intel.com',
 						workExperienceIds: ['eigen-fitness'],
-						projectIds: ['personal'],
 						startYear: 2022,
 					},
 				],
@@ -312,7 +306,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'exact-technology',
 							'blackberry',
 						],
-						projectIds: ['personal'],
 					},
 					{
 						title: 'Zephyr',
@@ -324,7 +317,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'eigen-fitness',
 							'exact-technology',
 						],
-						projectIds: ['personal'],
 					},
 					{
 						title: 'FreeRTOS',
@@ -336,7 +328,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'eigen-fitness',
 							'exact-technology',
 						],
-						projectIds: ['personal'],
 					},
 					{
 						title: 'Arduino & Processing',
@@ -349,7 +340,6 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'exact-technology',
 							'blackberry',
 						],
-						projectIds: ['personal'],
 					},
 				],
 			},
