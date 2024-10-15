@@ -178,7 +178,7 @@ export const Nodes: Project = {
 	title: 'Nodes',
 	companyId: 'eigen-fitness',
 	id: 'eigen-nodes',
-	description: 'Eigen Fitness',
+	description: 'Wearables made for weightlifting.',
 	link: 'https://www.eigen.fitness',
 	color: '#FC5F2B',
 	tags: [

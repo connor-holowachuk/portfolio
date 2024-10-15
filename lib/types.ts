@@ -23,6 +23,7 @@ export enum ProjectTag {
 export enum SoftwareTechnologyOption {
     NEXTJS = "next",
     REACT = "react",
+    SUPABASE = "supabase",
     TAILWIND = "tailwind",
     SHADCN = "shadcn",
     STRIPE = "stripe",
@@ -38,6 +39,9 @@ export enum SoftwareTechnologyOption {
     GROQ = "groq",
     CARTESIA = "cartesia",
     DENO = "deno",
+    PINECONE = "pinecone",
+    SAMBANOVA = "sambanova",
+    LLAMA = "llama",
 }
 
 export type SoftwareTechnologyOptionType = {
@@ -55,7 +59,8 @@ export type PageSection =
     | VideoLargeSection
     | YoutubeLargeSection
     | OtherProjectsSection
-    | SoftwareTechnologiesSection;
+    | SoftwareTechnologiesSection
+    | FeaturesSection;
 
 export type ImageGalleryImage = {
     src: string;
@@ -124,6 +129,21 @@ export type InfoSection = {
 export type ListSection = {
     type: "list";
     items: string[];
+};
+
+export type Feature = {
+    title: string;
+    description: string;
+    icon?: React.ReactNode;
+    iconUrl?: string;
+};
+
+export type FeaturesSection = {
+    type: "features";
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    features: Feature[];
 };
 
 export type Project = {

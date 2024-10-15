@@ -13,14 +13,23 @@ import {
 
 import {
 	Cable,
+	Camera,
+	CircleIcon,
 	Database,
-	Rabbit,
+	ListCheck,
 	LockIcon,
 	Notebook,
-	ListCheck,
-	Camera,
+	Rabbit,
 	User,
 } from 'lucide-react';
+
+const imageLargeSection1: ImageLargeSection = {
+	type: 'image-large',
+	title: 'DNAi',
+	description: 'DNAi',
+	src: '/images/projects/dnai/realtime-chat/mockup-1.png',
+	alt: 'DNAi',
+};
 
 const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
 	type: 'software-technologies',
@@ -28,12 +37,12 @@ const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
 		SoftwareTechnologyOption.NEXTJS,
 		SoftwareTechnologyOption.SUPABASE,
 		SoftwareTechnologyOption.TAILWIND,
-		SoftwareTechnologyOption.SHADCN,
-		SoftwareTechnologyOption.STRIPE,
 		SoftwareTechnologyOption.OPENAI,
-		SoftwareTechnologyOption.GROQ,
+		SoftwareTechnologyOption.LLAMA,
 		SoftwareTechnologyOption.CARTESIA,
-		SoftwareTechnologyOption.DENO,
+		SoftwareTechnologyOption.PINECONE,
+		SoftwareTechnologyOption.GROQ,
+		SoftwareTechnologyOption.SAMBANOVA,
 	],
 };
 
@@ -105,32 +114,32 @@ const featuresSection1: FeaturesSection = {
 
 const otherProjectsSection1: OtherProjectsSection = {
 	type: 'other-projects',
-	projectIds: ['dnai-labs-realtime-chat', 'exact-crane-avoidance'],
+	projectIds: ['dnai-labs-dashboard', 'exact-crane-avoidance'],
 };
 
-export const Dashboard: Project = {
-	title: 'Dashboard',
+export const RealtimeChat: Project = {
+	title: 'Realtime Chat',
 	companyId: 'dnai-labs',
-	id: 'dnai-labs-dashboard',
+	id: 'dnai-labs-realtime-chat',
 	description:
-		'An easy-to-use dashboard where professionals can deploy and manage their DNAi.',
+		'Low-latency, end-to-end encrypted real-time chats with digital clones.',
 	link: 'https://www.dnai.ai',
 	color: '#FC5F2B',
 	tags: [ProjectTag.SOFTWARE, ProjectTag.STARTUP],
-	thumbnailUrl: '/images/projects/dnai/dashboard/hero-cropped.png',
+	thumbnailUrl: '/images/projects/dnai/realtime-chat/hero.png',
 	page: {
-		summary:
-			'DNAi is a platform that allows researchers to analyze and visualize their data in a more intuitive and interactive way.',
-		heroImageSrc:
-			'/images/projects/dnai/dashboard/hero-cropped.png',
+		summary: `DNAi's real-time chat feature allows users to chat with a digital version of their service provider, with remarkably low latency. Making use of the LPU and TPU advancements made possible by Groq and SambaNova, I was able to bring latency down to less than 500ms for natural, flowing conversations. User also enjoy real-time chat summaries and topics, all with end-to-end encryption for added security.`,
+		heroImageSrc: '/images/projects/dnai/realtime-chat/hero.png',
 		placeholderHeroImageSrc:
-			'/images/projects/dnai/dashboard/hero-cropped.png',
+			'/images/projects/dnai/realtime-chat/hero-sm.png',
 		headerLogoSrc: '/images/projects/dnai/logo.png',
 		infoBlurb: '',
 		siteUrl: '',
 		sections: [
 			softwareTechnologiesSection1,
 			youtubeLargeSection1,
+			imageLargeSection1,
+
 			featuresSection1,
 			otherProjectsSection1,
 		],

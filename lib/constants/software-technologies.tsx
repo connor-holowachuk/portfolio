@@ -59,4 +59,28 @@ export const SoftwareTechnologiesData: SoftwareTechnologyOptionType[] =
 			iconUrl: '/images/software-technologies/deno.svg',
 			link: 'https://deno.com/',
 		},
+		{
+			type: SoftwareTechnologyOption.PINECONE,
+			title: 'Pinecone',
+			iconUrl: '/images/software-technologies/pinecone.png',
+			link: 'https://pinecone.io/',
+		},
+		{
+			type: SoftwareTechnologyOption.SUPABASE,
+			title: 'Supabase',
+			iconUrl: '/images/software-technologies/supabase.png',
+			link: 'https://supabase.com/',
+		},
+		{
+			type: SoftwareTechnologyOption.SAMBANOVA,
+			title: 'SambaNova',
+			iconUrl: '/images/software-technologies/sambanova.png',
+			link: 'https://sambanova.ai/',
+		},
+		{
+			type: SoftwareTechnologyOption.LLAMA,
+			title: 'Llama',
+			iconUrl: '/images/software-technologies/meta.png',
+			link: 'https://llama.meta.com/',
+		},
 	];

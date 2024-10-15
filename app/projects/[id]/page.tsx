@@ -14,6 +14,7 @@ import VideoLarge from '@/components/landing-page/project-pages/sections/video-l
 import YoutubeLarge from '@/components/landing-page/project-pages/sections/youtube-large';
 import OtherProjects from '@/components/landing-page/project-pages/sections/other-projects';
 import SoftwareTechnologies from '@/components/landing-page/project-pages/sections/software-technologies/software-technologies';
+import Features from '@/components/landing-page/project-pages/sections/features';
 
 type Props = {
 	params: { id: string };
@@ -90,6 +91,10 @@ export default function ProjectPage({ params }: Props) {
 						project={project}
 						section={section}
 					/>
+				);
+			case 'features':
+				return (
+					<Features project={project} section={section} />
 				);
 			default:
 				return null; // Handle unknown section types

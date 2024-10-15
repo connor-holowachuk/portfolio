@@ -34,10 +34,13 @@ const WorkExperienceSection: React.FC<
 						variant="title3"
 						color="muted"
 						className="mt-8 font-normal">
-						Dolor sit aute voluptate magna. Sunt velit
-						culpa sint eu in pariatur duis ex culpa id
-						est. Velit incididunt ad culpa irure nisi
-						consectetur minim dolore amet.
+						Between startups and large corporations, I've
+						been fortunate to work with a variety of
+						technologies and industries. Along the way, I
+						learned a lot about what it takes to be a
+						successful engineer from the great teams I've
+						worked with, and I'm always looking for new
+						challenges.
 					</Label>
 				</div>
 			</Column>
