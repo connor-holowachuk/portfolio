@@ -5,6 +5,7 @@ import {
 	ImageGalleryImage,
 	ImageLargeSection,
 	VideoLargeSection,
+	OtherProjectsSection,
 } from '@/lib/types';
 
 const videoLargeSection1: VideoLargeSection = {
@@ -12,7 +13,7 @@ const videoLargeSection1: VideoLargeSection = {
 	title: 'Miniature Model',
 	description:
 		'A wood model powered by a stepper motor was created to test the rotational accuracy of IMU used in the crane avoidance system. Please excuse the camera focus issues.',
-	src: '/videos/projects/exact-technology/crane-avoidance/video-1.mov',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/exact-technology/crane-avoidance/video-1.MOV?t=2024-10-16T00%3A58%3A25.397Z',
 	alt: 'Miniature Model Video',
 };
 const videoLargeSection2: VideoLargeSection = {
@@ -20,7 +21,7 @@ const videoLargeSection2: VideoLargeSection = {
 	title: 'Adding Collision Zones',
 	description:
 		'In addition to avoiding other cranes, the boom and rear counterweight must also avoid nearby towers, especially in dense urban environments. Adding collision zones to the system helped the crane opperator to avoid collisions with out-of-sight nearby structures.',
-	src: '/videos/projects/exact-technology/crane-avoidance/video-2.mov',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/exact-technology/crane-avoidance/video-1.MOV?t=2024-10-16T00%3A58%3A25.397Z',
 	alt: 'Adding Deadzones Video',
 };
 
@@ -83,6 +84,15 @@ const gallerySection2: ImageGallerySection = {
 	],
 };
 
+const otherProjectsSection: OtherProjectsSection = {
+	type: 'other-projects',
+	projectIds: [
+		'eigen-nodes',
+		'exact-temperature-logger',
+		'exact-exact-match-2',
+	],
+};
+
 export const CraneAvoidance: Project = {
 	title: 'Crane Avoidance',
 	companyId: 'exact-technology',
@@ -112,6 +122,7 @@ export const CraneAvoidance: Project = {
 			gallerySection1,
 			gallerySection2,
 			videoLargeSection2,
+			otherProjectsSection,
 		],
 	},
 	thumbnailUrl:

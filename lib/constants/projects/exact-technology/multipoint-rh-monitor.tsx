@@ -12,4 +12,8 @@ export const MultipointRHMonitor: Project = {
 		ProjectTag.SOFTWARE,
 		ProjectTag.FIRMWARE,
 	],
+	thumbnailUrl:
+		'/images/projects/exact-technology/multipoint-rh-logger/pcb-1.jpeg',
+	thumbnailBlurUrl:
+		'/images/projects/exact-technology/multipoint-rh-logger/pcb-1.jpeg',
 };

@@ -67,7 +67,7 @@ const Features = async ({ project, section }: FeaturesProps) => {
 					</div>
 				</InView>
 			)}
-			<div className="container w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 py-32 px-4 md:px-8 lg:px-8 xl:px-2">
+			<div className="container w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 pb-32 px-4 md:px-8 lg:px-8 xl:px-2">
 				{features.map((feature, index) => (
 					<InView
 						variants={{

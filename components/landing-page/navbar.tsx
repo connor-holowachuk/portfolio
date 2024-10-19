@@ -28,8 +28,8 @@ const NavbarItems: NavbarItem[] = [
 		label: 'Software',
 	},
 	{
-		href: '/design',
-		label: 'Design',
+		href: '/projects',
+		label: 'All Projects',
 	},
 ];
 

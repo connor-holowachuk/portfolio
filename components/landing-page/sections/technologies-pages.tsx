@@ -18,13 +18,18 @@ import { ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-const TechnologiesPages = () => {
+type TechnologiesPagesProps = {
+	forceTab?: string;
+};
+const TechnologiesPages = ({ forceTab }: TechnologiesPagesProps) => {
 	const { selectedTab } = useTechnologies();
+
+	const currentTab = forceTab ?? selectedTab;
 
 	return (
 		<>
 			{TechnologiesOptions.map((option: TechnologyPage) => {
-				return selectedTab === option.title ? (
+				return currentTab === option.title ? (
 					<TechnologiesPage
 						key={option.title}
 						page={option}

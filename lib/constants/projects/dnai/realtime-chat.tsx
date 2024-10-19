@@ -114,7 +114,11 @@ const featuresSection1: FeaturesSection = {
 
 const otherProjectsSection1: OtherProjectsSection = {
 	type: 'other-projects',
-	projectIds: ['dnai-labs-dashboard', 'exact-crane-avoidance'],
+	projectIds: [
+		'eigen-mobile-app',
+		'dnai-labs-dashboard',
+		'exact-crane-avoidance',
+	],
 };
 
 export const RealtimeChat: Project = {

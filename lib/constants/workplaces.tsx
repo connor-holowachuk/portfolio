@@ -20,6 +20,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/dnai-dark.png',
 		scheme: 'light',
 		color: '#94722F',
+		types: ['software', 'design'],
 		page: {
 			element: <DNAiLabsPage />,
 			siteUrl: 'https://www.getdnai.com/',
@@ -43,6 +44,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/eigen-fitness-light.png',
 		scheme: 'dark',
 		color: '#7963E0',
+		types: ['hardware', 'software', 'design'],
 		page: {
 			element: <EigenFitnessPage />,
 			heroImageSrc:
@@ -68,6 +70,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/exact-light.png',
 		scheme: 'dark',
 		color: '#FFFFFF',
+		types: ['hardware', 'software', 'design'],
 		page: {
 			element: <ExactTechnologyPage />,
 			heroImageSrc:
@@ -92,6 +95,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/paperdodo-color.png',
 		scheme: 'color-blue',
 		color: '#FF933E',
+		types: ['software', 'design'],
 		page: {
 			element: <PaperdodoPage />,
 			heroImageSrc:
@@ -115,6 +119,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/blackberry-light.png',
 		scheme: 'dark',
 		color: '#FFFFFF',
+		types: ['hardware', 'software', 'design'],
 		page: {
 			element: <BlackberryPage />,
 			heroImageSrc: '/images/workplaces/blackberry/hero.jpg',
@@ -137,6 +142,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/workride-dark.png',
 		scheme: 'color-green',
 		color: '#DEE902',
+		types: ['software', 'design'],
 		page: {
 			element: <WorkRidePage />,
 			heroImageSrc:
@@ -160,6 +166,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		image: '/images/workplaces/eigen-ads-color.png',
 		scheme: 'light',
 		color: '#FF0A0A',
+		types: ['software', 'design'],
 		page: {
 			element: <EigenAdsPage />,
 			heroImageSrc: '/images/workplaces/eigen-ads/hero2.jpg',

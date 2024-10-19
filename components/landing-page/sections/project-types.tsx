@@ -34,7 +34,7 @@ const projectTypes: ProjectType[] = [
 	{
 		title: 'Electrical Engineering',
 		description:
-			'My passion for electrical engineering lies in the design and implementation of innovative solutions that address real-world challenges. I thrive on turning complex technical problems into simple, elegant solutions.',
+			'Building hardware projects for over 15 years, from robotics to consumer wearables, and everything in between.',
 		icon: <Cpu size={48} />,
 		url: '/engineering',
 		dateRange: '2020 - 2024',
@@ -42,7 +42,7 @@ const projectTypes: ProjectType[] = [
 	{
 		title: 'Software Development',
 		description:
-			'Web development is the process of creating websites and web applications.',
+			'Between startups and large corporations, I have designed and built a wide variety of apps, platforms, and backend systems.',
 		icon: <Laptop size={48} />,
 		url: '/software',
 		dateRange: '2020 - 2024',
@@ -50,7 +50,7 @@ const projectTypes: ProjectType[] = [
 	{
 		title: 'UI/UX Design',
 		description:
-			'Web development is the process of creating websites and web applications.',
+			"A truly enjoyable user experience doesn't end with functionality. I love creating beautiful, intuitive, and engaging designs.",
 		icon: <Frame size={48} />,
 		url: '/design',
 		dateRange: '2020 - 2024',

@@ -41,15 +41,22 @@ const youtubeLargeSection1: YoutubeLargeSection = {
 	type: 'youtube-large',
 	title: 'Demo',
 	description:
-		'I created the Node promotion video over the course of 2 weeks using Adobe Premier, After Effects, and Blender to promote Nodes and how they help gym goers maximize their potential.',
+		'Here is a short demo of how professionals can clone themselves to create a DNAi, and share with their clients/patients.',
 	src: 'https://www.youtube.com/embed/6hD43Z6mlOM',
 	alt: 'DNAi',
+};
+
+const imageLargeSection1: ImageLargeSection = {
+	type: 'image-large',
+	alt: 'DNAi Dashboard',
+	src: '/images/projects/dnai/dashboard/laptop-1.png',
 };
 
 const featuresSection1: FeaturesSection = {
 	type: 'features',
 	title: 'Features',
-	description: 'DNAi',
+	description:
+		'Designed for professionals to deploy and manage their DNAi, the DNAi Dashboard is equipped with features to help professionals make the most of their time.',
 	features: [
 		{
 			title: 'Websocket Streaming',
@@ -105,7 +112,11 @@ const featuresSection1: FeaturesSection = {
 
 const otherProjectsSection1: OtherProjectsSection = {
 	type: 'other-projects',
-	projectIds: ['dnai-labs-realtime-chat', 'exact-crane-avoidance'],
+	projectIds: [
+		'dnai-labs-realtime-chat',
+		'exact-crane-avoidance',
+		'personal-cup-u',
+	],
 };
 
 export const Dashboard: Project = {
@@ -117,10 +128,10 @@ export const Dashboard: Project = {
 	link: 'https://www.dnai.ai',
 	color: '#FC5F2B',
 	tags: [ProjectTag.SOFTWARE, ProjectTag.STARTUP],
-	thumbnailUrl: '/images/projects/dnai/dashboard/hero-cropped.png',
+	thumbnailUrl: '/images/projects/dnai/dashboard/thumbnail.png',
 	page: {
 		summary:
-			'DNAi is a platform that allows researchers to analyze and visualize their data in a more intuitive and interactive way.',
+			'Professionals are time-capped at 8-10h a day. With growing demand for their services, their availablity is becoming less accessible by the day. DNAi is a platform that allows professionals to create interactive digital clones of themselves to share with their clients/patients to supplement in-person sessions. Professionals are able to review conversation summaries in 90 seconds or less, and securely share information with their clients/patients to build deeper relationships without the time constraints of an in-person session.',
 		heroImageSrc:
 			'/images/projects/dnai/dashboard/hero-cropped.png',
 		placeholderHeroImageSrc:
@@ -131,6 +142,7 @@ export const Dashboard: Project = {
 		sections: [
 			softwareTechnologiesSection1,
 			youtubeLargeSection1,
+			imageLargeSection1,
 			featuresSection1,
 			otherProjectsSection1,
 		],

@@ -23,6 +23,7 @@ export enum ProjectTag {
 export enum SoftwareTechnologyOption {
     NEXTJS = "next",
     REACT = "react",
+    REACT_NATIVE = "react-native",
     SUPABASE = "supabase",
     TAILWIND = "tailwind",
     SHADCN = "shadcn",
@@ -42,6 +43,21 @@ export enum SoftwareTechnologyOption {
     PINECONE = "pinecone",
     SAMBANOVA = "sambanova",
     LLAMA = "llama",
+    IONIC = "ionic",
+    CAPACITOR = "capacitor",
+    EXPO = "expo",
+    FIREBASE = "firebase",
+    TWILIO = "twilio",
+    SWIFT = "swift",
+    GOOGLE_MAPS = "google-maps",
+    COCOAPODS = "cocoapods",
+    OBJECTIVE_C = "objective-c",
+    RASPBERRY_PI = "raspberry-pi",
+    VUE = "vue",
+    BBME = "bbme",
+    IRIDIUM = "iridium",
+    ARDUINO = "arduino",
+    ESP32 = "esp32",
 }
 
 export type SoftwareTechnologyOptionType = {
@@ -60,7 +76,8 @@ export type PageSection =
     | YoutubeLargeSection
     | OtherProjectsSection
     | SoftwareTechnologiesSection
-    | FeaturesSection;
+    | FeaturesSection
+    | DividerSection;
 
 export type ImageGalleryImage = {
     src: string;
@@ -83,6 +100,7 @@ export type ImageLargeSection = {
     title?: string;
     subtitle?: string;
     description?: string;
+    caption?: string;
     src: string;
     alt: string;
 };
@@ -119,6 +137,10 @@ export type SoftwareTechnologiesSection = {
     subtitle?: string;
     description?: string;
     technologyOptions: SoftwareTechnologyOption[];
+};
+
+export type DividerSection = {
+    type: "divider";
 };
 
 export type InfoSection = {
@@ -181,6 +203,7 @@ export type WorkExperience = {
     scheme: "light" | "dark" | "color-blue" | "color-green";
     image: string;
     color?: string;
+    types?: ("hardware" | "software" | "design" | undefined)[];
     page?: {
         element: React.ReactNode;
         heroImageSrc: string;

@@ -37,3 +37,7 @@ next-env.d.ts
 
 # vs code
 .vscode
+
+# video files in projects
+/public/videos/projects/*
+

@@ -6,7 +6,19 @@ import {
 	ImageLargeSection,
 	YoutubeLargeSection,
 	OtherProjectsSection,
+	FeaturesSection,
 } from '@/lib/types';
+
+import {
+	Cable,
+	Database,
+	Rabbit,
+	LockIcon,
+	Notebook,
+	ListCheck,
+	Camera,
+	User,
+} from 'lucide-react';
 
 const youtubeLargeSection1: YoutubeLargeSection = {
 	type: 'youtube-large',
@@ -32,6 +44,15 @@ const imageLargeSection3: ImageLargeSection = {
 	type: 'image-large',
 	alt: 'Eigen Nodes',
 	src: '/images/projects/eigen-fitness/nodes/hero-4.png',
+};
+
+const youtubeLargeSection2: YoutubeLargeSection = {
+	type: 'youtube-large',
+	title: 'Node Demo (2023)',
+	description:
+		"Here's another demo of the mobile app, paired with Nodes, in action on bicep curls. Filmed prior to audio feedback and with an older UI version.",
+	src: 'https://www.youtube.com/embed/bKIBELpaN-M',
+	alt: 'Eigen Nodes',
 };
 
 const gallerySection1: ImageGallerySection = {
@@ -165,6 +186,63 @@ const gallerySection2: ImageGallerySection = {
 	],
 };
 
+const featuresSection1: FeaturesSection = {
+	type: 'features',
+	title: 'Features',
+	description: 'DNAi',
+	features: [
+		{
+			title: 'Websocket Streaming',
+			description:
+				"Audio streams of the DNAi's responses are streamed to the user as they are generated, providing a quick, seamless and interactive experience.",
+			icon: <Cable />,
+		},
+		{
+			title: 'Updatable RAG',
+			description:
+				'To present users with the latest infromation, professionals are able to easily update their knowlegde base through a chat with our onboarding assistant.',
+			icon: <Database />,
+		},
+		{
+			title: 'Sub-500ms Latency',
+			description:
+				'Realism is key to comfortable conversations with a DNAi. Llama 3.1 running on TPUs and LPUs were leveraged for a fast, realistic conversational interaction.',
+			icon: <Rabbit />,
+		},
+		{
+			title: 'E2E Encryption',
+			description:
+				'End-to-end encryption is a must for any chat application. We use industry standard AES-256 encryption to ensure that the conversations between users and service providers are private.',
+			icon: <LockIcon />,
+		},
+		{
+			title: 'Real-Time Chat Summaries',
+			description:
+				'Users can view the summaries that are shared with their service provider during the conversation so that they are comfortable with the information being shared.',
+			icon: <Notebook />,
+		},
+
+		{
+			title: 'Topic Summaries',
+			description:
+				'Conversation topics are summarized and presented to the user so that they can quickly view the information that will be shared with their service provider.',
+			icon: <ListCheck />,
+		},
+		{
+			title: 'Multimodal Inputs',
+			description:
+				'Users can speak and type messages to the DNAi, and supplement their responses with images and videos to be shared with their service provider.',
+			icon: <Camera />,
+		},
+		{
+			title: 'Secured by Authentication',
+			description:
+				"Users are required to login to the application to access the real-time chat feature, ensuring that only authorized users can access the service provider's DNAi.",
+			icon: <User />,
+		},
+	],
+};
+
 const otherProjectsSection: OtherProjectsSection = {
 	type: 'other-projects',
 	projectIds: [
@@ -209,8 +287,10 @@ export const Nodes: Project = {
 			imageLargeSection1,
 			imageLargeSection2,
 			imageLargeSection3,
+			youtubeLargeSection2,
 			gallerySection1,
 			gallerySection2,
+			featuresSection1,
 			otherProjectsSection,
 		],
 	},

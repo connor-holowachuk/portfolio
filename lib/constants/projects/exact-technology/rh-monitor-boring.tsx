@@ -13,5 +13,5 @@ export const RHMonitorBoring: Project = {
 		ProjectTag.FIRMWARE,
 	],
 	thumbnailUrl:
-		'/images/projects/exact-technology/multipoint-rh-logger/pcb-1.jpeg',
+		'/images/projects/exact-technology/rh-boring/thumbnail.png',
 };

@@ -15,7 +15,7 @@ import {
 import { ArrowRight } from 'lucide-react';
 
 // Define and import types
-import { ProjectData } from '@/lib/constants';
+import { ProjectData, WorkExperienceData } from '@/lib/constants';
 import { WorkExperience, Project } from '@/lib/types';
 type ProjectWorkplaceSectionProps = {
 	workplace: WorkExperience;
@@ -28,6 +28,11 @@ const ProjectWorkplaceSection = ({
 	const workplaceProjects: Project[] = ProjectData.filter(
 		(project) => project.companyId === workplaceId
 	);
+
+	const workplacePage =
+		WorkExperienceData.find(
+			(workplace) => workplace.id === workplaceId
+		)?.page ?? null;
 
 	return (
 		<Section borderBottom className="py-12 px-4 lg:px-0">
@@ -43,20 +48,24 @@ const ProjectWorkplaceSection = ({
 							{workplace.role}
 						</Label>
 					</div>
-					<Label variant="body" color="muted">
-						{workplace.description}
-					</Label>
-					<Link
-						href={`/workplace/${workplace.id}`}
-						className="flex-row flex items-center gap-2 group">
-						<Label
-							variant="body"
-							color="accent"
-							underline="group-hover">
-							View Workplace
+					{workplacePage && (
+						<Label variant="body" color="muted">
+							{workplace.description}
 						</Label>
-						<ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-2 transition-all duration-300" />
-					</Link>
+					)}
+					{workplacePage && (
+						<Link
+							href={`/workplace/${workplace.id}`}
+							className="flex-row flex items-center gap-2 group">
+							<Label
+								variant="body"
+								color="accent"
+								underline="group-hover">
+								View Workplace
+							</Label>
+							<ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-2 transition-all duration-300" />
+						</Link>
+					)}
 				</div>
 			</Column>
 			<Column

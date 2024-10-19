@@ -2,11 +2,39 @@ import {
 	Project,
 	ProjectTag,
 	ImageGallerySection,
-	ImageGalleryImage,
-	ImageLargeSection,
+	SoftwareTechnologyOption,
+	SoftwareTechnologiesSection,
 	VideoLargeSection,
 	OtherProjectsSection,
+	FeaturesSection,
 } from '@/lib/types';
+
+import {
+	Cable,
+	Database,
+	Rabbit,
+	LockIcon,
+	Notebook,
+	ListCheck,
+	Camera,
+	User,
+	Satellite,
+	Tv,
+	Shrink,
+	BatteryFull,
+	Radio,
+	SunSnow,
+	BatteryWarning,
+} from 'lucide-react';
+
+const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
+	type: 'software-technologies',
+	technologyOptions: [
+		SoftwareTechnologyOption.ESP32,
+		SoftwareTechnologyOption.IRIDIUM,
+		SoftwareTechnologyOption.ARDUINO,
+	],
+};
 
 const videoLargeSection1: VideoLargeSection = {
 	type: 'video-large',
@@ -50,6 +78,63 @@ const gallerySection1: ImageGallerySection = {
 	],
 };
 
+const featuresSection1: FeaturesSection = {
+	type: 'features',
+	title: 'Features',
+	description:
+		'The Satellite Logger was equipped with a number of features to provide reliable and secure data transmission over the Iridium network.',
+	features: [
+		{
+			title: 'Iridium Connectivity',
+			description:
+				'The logger was equipped with an Iridium modem to provide reliable and secure data transmission over the Iridium network.',
+			icon: <Satellite />,
+		},
+		{
+			title: 'Automatic Data Logging',
+			description:
+				'The logger was equipped with a microcontroller to automatically log data when the Iridium modem was able to connect to the network.',
+			icon: <Database />,
+		},
+		{
+			title: 'Heads Up Display',
+			description:
+				'The logger was equipped with a 2.8" LCD screen to provide a heads up display for the operator to view the status of the logger and the temperature readings from the probes.',
+			icon: <Tv />,
+		},
+		{
+			title: 'Custom Data Compression',
+			description:
+				'The logger was equipped with a custom data compression algorithm to minimize the amount of data sent over the Iridium network, reducing costs by more than 80%.',
+			icon: <Shrink />,
+		},
+		{
+			title: 'Low Power Consumption',
+			description:
+				'To extend the battery life of the device, a low power SoC was used, along with power routing to prioritize vital functions like the Iridium modem and temperature sensors.',
+			icon: <BatteryFull />,
+		},
+		{
+			title: '802.11 Radio',
+			description:
+				'The logger is Bluetooth and WiFi enabled to allow for on-the-spot configuration and updates to the device.',
+			icon: <Radio />,
+		},
+		{
+			title: 'Power Alerts',
+			description:
+				'The logger was equipped with a battery status display to provide the operator with the remaining battery capacity of the logger.',
+			icon: <BatteryWarning />,
+		},
+		{
+			title: 'Temperature Readings',
+			description:
+				'The logger was equipped with thermistor probes to measure the temperature of the concrete.',
+			icon: <SunSnow />,
+		},
+	],
+};
+
 const otherProjectsSection: OtherProjectsSection = {
 	type: 'other-projects',
 	projectIds: [
@@ -89,8 +174,10 @@ export const SatelliteLogger: Project = {
 		infoBlurb: 'Hello',
 		siteUrl: 'https://www.exact.com',
 		sections: [
+			softwareTechnologiesSection1,
 			videoLargeSection1,
 			gallerySection1,
+			featuresSection1,
 			otherProjectsSection,
 		],
 	},

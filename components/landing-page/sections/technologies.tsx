@@ -9,7 +9,11 @@ import { TechnologiesProvider } from '@/lib/providers/TechnologiesContext';
 import TechnologiesTabs from './technologies-tabs';
 import TechnologiesPages from './technologies-pages';
 
-const Technologies = () => (
+type TechnologiesProps = {
+	forceTab?: string;
+	title?: string;
+};
+const Technologies = ({ forceTab, title }: TechnologiesProps) => (
 	<TechnologiesProvider>
 		<Section fullWidth borderBottom>
 			<Column
@@ -21,7 +25,9 @@ const Technologies = () => (
 					<Label variant="body" color="muted">
 						Past & Present
 					</Label>
-					<Label variant="titleLg">Technologies</Label>
+					<Label variant="titleLg">
+						{title || 'Technologies'}
+					</Label>
 					<Label
 						variant="title3"
 						color="muted"
@@ -32,7 +38,7 @@ const Technologies = () => (
 						knowledge across various domains. Select a
 						technology to learn more.
 					</Label>
-					<TechnologiesTabs />
+					{!forceTab && <TechnologiesTabs />}
 				</div>
 			</Column>
 			<Column width={2} className="flex flex-col">
@@ -50,7 +56,7 @@ const Technologies = () => (
 					<div className="absolute z-10 w-full h-full bg-gradient-to-b from-background/0 to-background" />
 				</div>
 				<div className="w-full flex flex-col gap-16 px-4 md:px-12 py-40 lg:bg-transparent relative z-10 bg-background">
-					<TechnologiesPages />
+					<TechnologiesPages forceTab={forceTab} />
 				</div>
 			</Column>
 		</Section>

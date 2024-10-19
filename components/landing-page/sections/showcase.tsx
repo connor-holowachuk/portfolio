@@ -9,20 +9,30 @@ import Link from 'next/link';
 import { ParallaxScroll } from '@/components/ui/parallax-scroll';
 import { ProjectData } from '@/lib/constants/projects';
 
-const showcaseProjectIds = [
+const defaultShowcaseProjectIds = [
 	'eigen-nodes',
-	'exact-crane-avoidance',
-	'exact-temperature-logger',
-	'blackberry-hr-monitor',
+	'dnai-labs-realtime-chat',
+	'eigen-dashboard',
 	'university-tesla-coil',
+	'eigen-mobile-app',
+	'exact-temperature-logger',
 	'personal-reflow-oven',
 	'exact-rh-monitor-boring',
-	'exact-satellite-logger',
+	'dnai-labs-dashboard',
 	'eigen-ads-mobile-app',
 	'exact-pcb-antenna-tuning',
+	'exact-satellite-logger',
 ];
 
-const Showcase = async () => {
+type ShowcaseProps = {
+	title?: string;
+	projectIds?: string[];
+};
+
+const Showcase = async ({ title, projectIds }: ShowcaseProps) => {
+	const showcaseProjectIds =
+		projectIds ?? defaultShowcaseProjectIds;
+
 	// Get projects from project data
 	const projects = ProjectData.filter((project) =>
 		showcaseProjectIds.includes(project.id)
@@ -37,6 +47,11 @@ const Showcase = async () => {
 
 	return (
 		<div className="w-full bg-background z-50 flex flex-col items-center h-auto overflow-hidden border-b border-border border-dashed">
+			<div className="w-full pt-64 pb-12 flex flex-col items-center">
+				<Label variant="titleXl" className="text-center">
+					{title ?? 'Featured Projects'}
+				</Label>
+			</div>
 			<div className="w-full px-0 py-24">
 				<ParallaxScroll projects={projects} />
 			</div>

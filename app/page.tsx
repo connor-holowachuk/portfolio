@@ -10,7 +10,7 @@ import ProjectTypes from '@/components/landing-page/sections/project-types';
 import WorkExperience from '@/components/landing-page/sections/work-experience';
 import Education from '@/components/landing-page/sections/education';
 import Technologies from '@/components/landing-page/sections/technologies';
-
+import Contact from '@/components/landing-page/sections/contact';
 import AnalyticsHelper from '@/components/landing-page/analytics-helper';
 
 type SearchParamProps = {
@@ -34,6 +34,7 @@ export default function Home({ searchParams }: SearchParamProps) {
 			<WorkExperience />
 			<Education />
 			<Technologies />
+			<Contact />
 		</main>
 	);
 }

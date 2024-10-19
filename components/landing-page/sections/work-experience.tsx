@@ -9,13 +9,25 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-type WorkExperienceProps = {};
+type WorkExperienceProps = {
+	title?: string;
+	filterType?: 'hardware' | 'software' | 'design' | undefined;
+};
 import { WorkExperience } from '@/lib/types';
 import { WorkExperienceData } from '@/lib/constants';
 
-const WorkExperienceSection: React.FC<
-	WorkExperienceProps
-> = async () => {
+const WorkExperienceSection: React.FC<WorkExperienceProps> = async ({
+	title,
+	filterType,
+}) => {
+	const filteredWorkExperience = WorkExperienceData.filter(
+		(item) => {
+			if (filterType) {
+				return item.types?.includes(filterType);
+			}
+			return true;
+		}
+	);
 	return (
 		<Section fullWidth borderBottom id="workplaces">
 			<Column
@@ -28,7 +40,7 @@ const WorkExperienceSection: React.FC<
 						Past & Present
 					</Label>
 					<Label variant="titleLg" className=" ">
-						Work Experience
+						{title ?? 'Work Experience'}
 					</Label>
 					<Label
 						variant="title3"
@@ -61,14 +73,14 @@ const WorkExperienceSection: React.FC<
 					<div className="absolute z-10 w-full h-full bg-gradient-to-b from-background/0 to-background" />
 				</div>
 				<div className="w-full flex flex-col gap-6 md:gap-12 lg:gap-16 px-4 md:px-12 py-48 bg-background relative z-10 lg:bg-transparent">
-					{WorkExperienceData.filter(
-						(item) => !item.hideCard
-					).map((item, index) => (
-						<WorkExperienceCard
-							key={`card-${index}`}
-							{...item}
-						/>
-					))}
+					{filteredWorkExperience
+						.filter((item) => !item.hideCard)
+						.map((item, index) => (
+							<WorkExperienceCard
+								key={`card-${index}`}
+								{...item}
+							/>
+						))}
 				</div>
 			</Column>
 		</Section>

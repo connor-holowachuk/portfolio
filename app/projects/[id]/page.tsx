@@ -15,6 +15,7 @@ import YoutubeLarge from '@/components/landing-page/project-pages/sections/youtu
 import OtherProjects from '@/components/landing-page/project-pages/sections/other-projects';
 import SoftwareTechnologies from '@/components/landing-page/project-pages/sections/software-technologies/software-technologies';
 import Features from '@/components/landing-page/project-pages/sections/features';
+import Divider from '@/components/ui/divider';
 
 type Props = {
 	params: { id: string };
@@ -96,6 +97,8 @@ export default function ProjectPage({ params }: Props) {
 				return (
 					<Features project={project} section={section} />
 				);
+			case 'divider':
+				return <Divider />;
 			default:
 				return null; // Handle unknown section types
 		}
@@ -122,6 +125,7 @@ export default function ProjectPage({ params }: Props) {
 						}
 						tags={[]}
 						heading={`${workExperience?.company} | ${workExperience?.role}`}
+						link={`/workplace/${project?.companyId}`}
 					/>
 				}>
 				{/* Render all sections */}

@@ -137,7 +137,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 							{project.date}
 						</Label>
 					)}
-					<Label variant="titleLg">{project.title}</Label>
+					<Link href={projectUri}>
+						<Label variant="titleLg" cursor="pointer">
+							{project.title}
+						</Label>
+					</Link>
 
 					<div className="flex flex-wrap gap-1 mt-2 mb-4">
 						{project.tags.map((tag) => (

@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 const About = async () => {
 	return (
-		<Section fullWidth>
+		<Section fullWidth borderBottom>
 			<Column
 				width={1}
 				className="col-span-1 sticky top-0 h-1/2 pt-32 lg:pt-64 lg:h-screen ">
@@ -39,7 +39,7 @@ const About = async () => {
 			</Column>
 			<Column
 				width={2}
-				className="col-span-2 flex flex-col items-center lg:pt-64  ">
+				className="col-span-2 flex flex-col items-center lg:pt-64  pb-48">
 				<div className="w-full h-[250px] relative z-10 block lg:hidden">
 					<div
 						className="gradient-blur absolute z-0"
