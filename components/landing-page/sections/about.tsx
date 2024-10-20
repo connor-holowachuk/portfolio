@@ -39,7 +39,7 @@ const About = async () => {
 			</Column>
 			<Column
 				width={2}
-				className="col-span-2 flex flex-col items-center lg:pt-64  pb-48">
+				className="col-span-2 flex flex-col items-center lg:pt-64 pb-0 lg:pb-48">
 				<div className="w-full h-[250px] relative z-10 block lg:hidden">
 					<div
 						className="gradient-blur absolute z-0"
@@ -99,7 +99,7 @@ const About = async () => {
 								motion tracking wearables
 							</InlineLink>{' '}
 							to{' '}
-							<InlineLink href="/workplace/dnai">
+							<InlineLink href="/workplace/dnai-labs">
 								AI-powered clones
 							</InlineLink>
 							.
@@ -157,6 +157,7 @@ const About = async () => {
 							.
 						</Label>
 					</InViewTextWrapper>
+					<div className="w-full h-36 bg-background lg:hidden flex" />
 				</div>
 			</Column>
 		</Section>

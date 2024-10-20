@@ -155,10 +155,10 @@ const Navbar = ({}: HeaderProps) => {
 									</Label>
 								</Link>
 								<Link
-									href="/design"
+									href="/projects"
 									className="cursor-pointer transition-all duration-200 ease-in-out hover:opacity-80">
 									<Label className="cursor-pointer font-sans text-lg font-normal text-white/80">
-										Design
+										All Projects
 									</Label>
 								</Link>
 							</div>

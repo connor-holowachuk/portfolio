@@ -60,8 +60,7 @@ const Contact = async () => {
 									className="text-white hover:text-accent hover:underline">
 									connor@holowachuk.com
 								</Link>{' '}
-								and let's build something cool
-								together!
+								and let's build the future together!
 							</Label>
 							<Link
 								href="mailto:holowachukc@gmail.com"
