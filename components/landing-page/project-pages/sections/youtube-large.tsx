@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 // Define and import types
 import { Project, YoutubeLargeSection } from '@/lib/types';
 type VideoProps = {
-	project: Project;
+	project?: Project;
 	section: YoutubeLargeSection;
 };
 

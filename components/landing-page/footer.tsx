@@ -38,7 +38,7 @@ const Footer = () => {
 							</li>
 							<li>
 								<Link
-									href="#workplaces"
+									href="/#workplaces"
 									className="hover:text-accent">
 									Workplaces
 								</Link>

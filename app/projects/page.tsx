@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 
 import HeroSmallSection from '@/components/landing-page/sections/hero-small';
-import PageNotFound from '@/components/landing-page/sections/page-not-found';
 import AnalyticsHelper from '@/components/landing-page/analytics-helper';
-import { ProjectData, WorkExperienceData } from '@/lib/constants';
+import Contact from '@/components/landing-page/sections/contact';
+
+import { WorkExperienceData } from '@/lib/constants';
 import ProjectWorkplaceSection from '@/components/landing-page/project-pages/project-workplace-section';
 type Props = {
 	params: { id: string };
@@ -40,6 +41,7 @@ export default function ProjectPage({ params }: Props) {
 					/>
 				))}
 			</div>
+			<Contact />
 		</div>
 	);
 }

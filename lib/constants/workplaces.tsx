@@ -40,7 +40,7 @@ export const WorkExperienceData: WorkExperience[] = [
 		date: 'June 2022 - May 2024',
 		location: 'Toronto, ON',
 		description:
-			'Eigen Fitness is a startup offering personal trainers a deeper way to connect with their remote clients. Our proprietary hardware and software allows trainers to monitor lifting form on every rep, track progress over time, and provide personalized feedback to help their clients achieve their fitness goals.',
+			'Eigen Fitness is a startup I co-founded offering personal trainers a deeper way to connect with their remote clients. I developed the proprietary hardware and software that allows trainers to monitor lifting form on every rep, track progress over time, and provide personalized feedback to help their clients achieve their fitness goals.',
 		image: '/images/workplaces/eigen-fitness-light.png',
 		scheme: 'dark',
 		color: '#7963E0',
@@ -53,7 +53,7 @@ export const WorkExperienceData: WorkExperience[] = [
 				'/images/workplaces/exact-technology/hero-sm.jpg',
 			headerLogoSrc: '/images/workplaces/1.png',
 			infoBlurb:
-				'Eigen Fitness is a startup offering personal trainers a deeper way to connect with their remote clients. Our proprietary hardware and software allows trainers to monitor lifting form on every rep, track progress over time, and provide personalized feedback to help their clients achieve their fitness goals.',
+				'Eigen Fitness is a startup I co-founded offering personal trainers a deeper way to connect with their remote clients. I developed the proprietary hardware and software that allows trainers to monitor lifting form on every rep, track progress over time, and provide personalized feedback to help their clients achieve their fitness goals.',
 			siteUrl: 'https://www.exacttechnology.com/',
 			projectsDescription:
 				'Over the course of 2 years, I oversaw hardware, firmware, and software developent on our entire product suite, as well as business operations.',

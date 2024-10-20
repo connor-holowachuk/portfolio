@@ -8,6 +8,7 @@ import InfoImage from '@/components/landing-page/sections/info-image';
 import WorkplaceScroller from '@/components/landing-page/sections/workplace-scroller';
 import WorkExperienceSection from '@/components/landing-page/sections/work-experience';
 import Showcase from '@/components/landing-page/sections/showcase';
+import Contact from '@/components/landing-page/sections/contact';
 
 import { Label } from '@/components/ui/label';
 import Technologies from '@/components/landing-page/sections/technologies';
@@ -82,6 +83,7 @@ export default function Engineering({
 				title="Firmware Technologies"
 				forceTab="Firmware"
 			/>
+			<Contact />
 		</main>
 	);
 }

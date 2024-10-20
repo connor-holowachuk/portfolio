@@ -25,8 +25,6 @@ import {
 
 const imageLargeSection1: ImageLargeSection = {
 	type: 'image-large',
-	title: 'DNAi',
-	description: 'DNAi',
 	src: '/images/projects/dnai/realtime-chat/mockup-1.png',
 	alt: 'DNAi',
 };
@@ -50,7 +48,7 @@ const youtubeLargeSection1: YoutubeLargeSection = {
 	type: 'youtube-large',
 	title: 'Demo',
 	description:
-		'I created the Node promotion video over the course of 2 weeks using Adobe Premier, After Effects, and Blender to promote Nodes and how they help gym goers maximize their potential.',
+		'Here is a short demo of how professionals can clone themselves to create a DNAi, and share with their clients/patients.',
 	src: 'https://www.youtube.com/embed/6hD43Z6mlOM',
 	alt: 'DNAi',
 };
@@ -58,7 +56,8 @@ const youtubeLargeSection1: YoutubeLargeSection = {
 const featuresSection1: FeaturesSection = {
 	type: 'features',
 	title: 'Features',
-	description: 'DNAi',
+	description:
+		'Realtime chat with DNAi was built to be a fast, secure and interactive experience.',
 	features: [
 		{
 			title: 'Websocket Streaming',

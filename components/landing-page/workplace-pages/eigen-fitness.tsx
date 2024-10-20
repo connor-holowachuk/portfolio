@@ -9,7 +9,8 @@ import {
 import SectionCross from '@/components/landing-page/sections/section-cross';
 import Role from '@/components/landing-page/sections/role';
 import ProjectsSection from '@/components/landing-page/sections/projects';
-
+import YoutubeLarge from '@/components/landing-page/project-pages/sections/youtube-large';
+import Divider from '@/components/ui/divider';
 import { WorkExperienceData } from '@/lib/constants';
 
 const EigenFitnessPage = async () => {
@@ -33,6 +34,28 @@ const EigenFitnessPage = async () => {
 						placeholderImageSrc="/images/workplaces/eigen-fitness/role-sm.png"
 					/>
 					<ProjectsSection workExperience={workplace} />
+					<YoutubeLarge
+						section={{
+							type: 'youtube-large',
+							title: 'Nodes Promotion Video',
+							description:
+								'I created the Node promotion video over the course of 2 weeks using Adobe Premier, After Effects, and Blender to promote Nodes and how they help gym goers maximize their potential.',
+							src: 'https://www.youtube.com/embed/MMQmWUwqzgk',
+							alt: 'Eigen Fitness Demo',
+						}}
+					/>
+					<Divider />
+					<YoutubeLarge
+						section={{
+							type: 'youtube-large',
+							title: "LIFTS Interview (CES '24)",
+							description:
+								'LIFTS is a podcast that discusses the latest news in fitness technology. I was invited to discuss the Nodes and the future of fitness technology at CES 2024.',
+							src: 'https://www.youtube.com/embed/jw1u3ZbaOvM?start=3595',
+							alt: 'Eigen Fitness Demo',
+						}}
+					/>
+					<Divider />
 				</div>
 			</WorkplacePageWrapper>
 		)

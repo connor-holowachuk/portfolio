@@ -191,4 +191,41 @@ export const SoftwareTechnologiesData: SoftwareTechnologyOptionType[] =
 			iconUrl: '/images/software-technologies/espressif.png',
 			link: 'https://www.espressif.com/en/products/socs/esp32',
 		},
+		{
+			type: SoftwareTechnologyOption.NORDIC_SDK,
+			title: 'Nordic SDK',
+			iconUrl: '/images/software-technologies/nordic.png',
+			link: 'https://www.nordicsemi.com/Software-and-tools/Software/nRF-Connect-SDK',
+		},
+		{
+			type: SoftwareTechnologyOption.CPP,
+			title: 'C/C++',
+			iconUrl: '/images/software-technologies/cpp.png',
+			link: 'https://isocpp.org/',
+		},
+		{
+			type: SoftwareTechnologyOption.ZEPHYR,
+			title: 'Zephyr',
+			iconUrl: '/images/software-technologies/zephyr.svg',
+			link: 'https://zephyrproject.org/',
+		},
+		{
+			type: SoftwareTechnologyOption.ALTIUM,
+			title: 'Altium',
+			iconUrl:
+				'/images/software-technologies/altium-designer.png',
+			link: 'https://www.altium.com/products/altium-designer',
+		},
+		{
+			type: SoftwareTechnologyOption.SEGGER,
+			title: 'SEGGER SES',
+			iconUrl: '/images/software-technologies/segger.png',
+			link: 'https://www.segger.com/',
+		},
+		{
+			type: SoftwareTechnologyOption.FUSION,
+			title: 'Fusion 360',
+			iconUrl: '/images/software-technologies/fusion.png',
+			link: 'https://www.autodesk.com/products/fusion-360/overview',
+		},
 	];

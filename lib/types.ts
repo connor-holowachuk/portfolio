@@ -58,6 +58,12 @@ export enum SoftwareTechnologyOption {
     IRIDIUM = "iridium",
     ARDUINO = "arduino",
     ESP32 = "esp32",
+    NORDIC_SDK = "nordic-sdk",
+    SEGGER = "segger",
+    FUSION = "fusion",
+    ALTIUM = "altium",
+    ZEPHYR = "zephyr",
+    CPP = "cpp",
 }
 
 export type SoftwareTechnologyOptionType = {

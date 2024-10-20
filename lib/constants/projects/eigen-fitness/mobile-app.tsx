@@ -20,6 +20,14 @@ import {
 	ListCheck,
 	Camera,
 	User,
+	Smartphone,
+	MessageSquare,
+	AudioLines,
+	Calendar,
+	Apple,
+	Radio,
+	Star,
+	TrendingUp,
 } from 'lucide-react';
 
 const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
@@ -43,7 +51,7 @@ const youtubeLargeSection1: YoutubeLargeSection = {
 	description:
 		"Here's a short demo of the mobile app, paired with the Apple Watch App, in action on bench press. The audio feedback was later improved to sound like your coach with high fidelity voice cloning.",
 	src: 'https://www.youtube.com/embed/biLMzefP4Pc',
-	alt: 'Eigen Nodes',
+	alt: 'Eigen AW',
 };
 
 const youtubeLargeSection2: YoutubeLargeSection = {
@@ -60,7 +68,7 @@ const imageLargeSection1: ImageLargeSection = {
 	alt: 'Eigen Nodes',
 	src: '/images/projects/eigen-fitness/mobile-app/phone-1.png',
 	caption:
-		'Version 1.2.0. The interface updated focused on promoting coach interaction with clients. Voice cloning was added to promote a parasocial relationship with their coach while training remotely.',
+		'Version 1.2.0. The update focused on promoting coach interaction with clients. Voice cloning was added to promote a parasocial relationship with their coach while training remotely.',
 };
 const imageLargeSection2: ImageLargeSection = {
 	type: 'image-large',
@@ -77,56 +85,57 @@ const imageLargeSection3: ImageLargeSection = {
 const featuresSection1: FeaturesSection = {
 	type: 'features',
 	title: 'Features',
-	description: 'DNAi',
+	description:
+		'The Eigen App was designed to provide new to experienced gym-goers with a seamless tool to reach their goals faster than ever before.',
 	features: [
 		{
-			title: 'Websocket Streaming',
+			title: 'Coach-managed Programs',
 			description:
-				"Audio streams of the DNAi's responses are streamed to the user as they are generated, providing a quick, seamless and interactive experience.",
-			icon: <Cable />,
+				"Users can view their coach's custom workout program and follow along with the provided instructional videos to stay on track to reaching their goals.",
+			icon: <Calendar />,
 		},
 		{
-			title: 'Updatable RAG',
+			title: "Coach's Voice Feedback",
 			description:
-				'To present users with the latest infromation, professionals are able to easily update their knowlegde base through a chat with our onboarding assistant.',
-			icon: <Database />,
+				"Users can hear their coach's voice guiding them through proper lifting techniques, providing a more personalized experience and building a deeper relationship with their coach.",
+			icon: <AudioLines />,
 		},
 		{
-			title: 'Sub-500ms Latency',
+			title: 'In-app Messaging',
 			description:
-				'Realism is key to comfortable conversations with a DNAi. Llama 3.1 running on TPUs and LPUs were leveraged for a fast, realistic conversational interaction.',
-			icon: <Rabbit />,
+				'Users can message their coach either over SMS or directly through the app to ask questions, get feedback, and stay on track to reaching their goals.',
+			icon: <MessageSquare />,
 		},
 		{
-			title: 'E2E Encryption',
+			title: 'Tailored Workout Summaries',
 			description:
-				'End-to-end encryption is a must for any chat application. We use industry standard AES-256 encryption to ensure that the conversations between users and service providers are private.',
-			icon: <LockIcon />,
-		},
-		{
-			title: 'Real-Time Chat Summaries',
-			description:
-				'Users can view the summaries that are shared with their service provider during the conversation so that they are comfortable with the information being shared.',
+				'Users can view summaries of their workouts to quickly review their progress and stay on track to reaching their goals, with high-fidelity lifting metrics for advanced users.',
 			icon: <Notebook />,
+		},
+		{
+			title: 'Nutrition Logging',
+			description:
+				"Users can log their meals and recipes to view their nutrition data over time, and follow along with their coach's AI-generated meal plans.",
+			icon: <Apple />,
 		},
 
 		{
-			title: 'Topic Summaries',
+			title: 'Set-by-Set Ratings',
 			description:
-				'Conversation topics are summarized and presented to the user so that they can quickly view the information that will be shared with their service provider.',
-			icon: <ListCheck />,
+				'Motion data is used to rate each set on a scale of 1-5 stars for a simple, objective way to track progress over time.',
+			icon: <Star />,
 		},
 		{
-			title: 'Multimodal Inputs',
+			title: 'Improvement Tips',
 			description:
-				'Users can speak and type messages to the DNAi, and supplement their responses with images and videos to be shared with their service provider.',
-			icon: <Camera />,
+				'Node and Apple Watch data is used to provide personalized improvement tips on a variety of metrics to help users get the most out of their training.',
+			icon: <TrendingUp />,
 		},
 		{
-			title: 'Secured by Authentication',
+			title: 'BLE Node Connectivity',
 			description:
-				"Users are required to login to the application to access the real-time chat feature, ensuring that only authorized users can access the service provider's DNAi.",
-			icon: <User />,
+				"Nodes automatically connect to their owner's phone when in range. The mobile app allows users to manage Node settings, and update firmware OTA.",
+			icon: <Radio />,
 		},
 	],
 };
@@ -152,7 +161,7 @@ export const MobileApp: Project = {
 		'/images/projects/eigen-fitness/mobile-app/hero.png',
 	page: {
 		summary:
-			'In a market saturated with cardio-focused wearables, Nodes are the first wearables created exclusively for weightlifting. Gym-goers wear 3, 5, or 9 Nodes to measure every rep: velocity, ROM, tempo, power, and more. Each Node is equipped with a state of the art IMU and custom motion fusion algorithms to provide real-time motion tracking over each rep. Users can view their data in the Eigen App, recieve personalized feedback from their personal trainer, and compete with friends in leaderboards and challenges.',
+			'In a market saturated with cardio-focused wearables, Nodes are the first wearables created exclusively for weightlifting. Users connect to Nodes or the Eigen Apple Watch App to with the Eigen App to connect with their coach, view their data, watch exercise instructional videos, recieve personalized feedback from their coach, and compete with friends in leaderboards and challenges.',
 		heroImageSrc:
 			'/images/projects/eigen-fitness/mobile-app/hero-cropped.png',
 		placeholderHeroImageSrc:

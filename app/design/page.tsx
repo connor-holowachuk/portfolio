@@ -4,11 +4,8 @@ import type { Metadata } from 'next';
 // Import components
 import HeroSmallSection from '@/components/landing-page/sections/hero-small';
 import WorkplaceScroller from '@/components/landing-page/sections/workplace-scroller';
-import About from '@/components/landing-page/sections/about';
-import ProjectTypes from '@/components/landing-page/sections/project-types';
-import WorkExperience from '@/components/landing-page/sections/work-experience';
-import Education from '@/components/landing-page/sections/education';
 import Technologies from '@/components/landing-page/sections/technologies';
+import Contact from '@/components/landing-page/sections/contact';
 
 import AnalyticsHelper from '@/components/landing-page/analytics-helper';
 import WorkExperienceSection from '@/components/landing-page/sections/work-experience';
@@ -74,6 +71,7 @@ export default function Design({ searchParams }: SearchParamProps) {
 				filterType="design"
 			/>
 			<Technologies forceTab="Design" />
+			<Contact />
 		</main>
 	);
 }
