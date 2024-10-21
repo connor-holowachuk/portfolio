@@ -110,7 +110,8 @@ export const TemperatureLogger: Project = {
 	title: 'Temperature Logger',
 	companyId: 'exact-technology',
 	id: 'exact-temperature-logger',
-	description: 'Exact',
+	description:
+		'Rugged, multi-use temperature logger for monitoring concrete curing.',
 	link: 'https://www.exact.com',
 	color: '#FC5F2B',
 	tags: [

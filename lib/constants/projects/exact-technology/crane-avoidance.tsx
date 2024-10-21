@@ -6,6 +6,9 @@ import {
 	ImageLargeSection,
 	VideoLargeSection,
 	OtherProjectsSection,
+	DividerSection,
+	SoftwareTechnologyOption,
+	SoftwareTechnologiesSection,
 } from '@/lib/types';
 
 const videoLargeSection1: VideoLargeSection = {
@@ -84,6 +87,18 @@ const gallerySection2: ImageGallerySection = {
 	],
 };
 
+const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
+	type: 'software-technologies',
+	technologyOptions: [
+		SoftwareTechnologyOption.RASPBERRY_PI,
+		SoftwareTechnologyOption.VUE,
+		SoftwareTechnologyOption.NODE,
+		SoftwareTechnologyOption.MONGODB,
+		SoftwareTechnologyOption.ALTIUM,
+		SoftwareTechnologyOption.FUSION,
+	],
+};
+
 const otherProjectsSection: OtherProjectsSection = {
 	type: 'other-projects',
 	projectIds: [
@@ -122,6 +137,7 @@ export const CraneAvoidance: Project = {
 			gallerySection1,
 			gallerySection2,
 			videoLargeSection2,
+			softwareTechnologiesSection1,
 			otherProjectsSection,
 		],
 	},

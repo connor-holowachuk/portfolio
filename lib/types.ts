@@ -64,6 +64,8 @@ export enum SoftwareTechnologyOption {
     ALTIUM = "altium",
     ZEPHYR = "zephyr",
     CPP = "cpp",
+    PARTICLE = "particle",
+    MAPBOX = "mapbox",
 }
 
 export type SoftwareTechnologyOptionType = {

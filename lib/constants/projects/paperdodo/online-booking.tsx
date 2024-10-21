@@ -30,51 +30,75 @@ import {
 const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
 	type: 'software-technologies',
 	technologyOptions: [
-		SoftwareTechnologyOption.SWIFT,
-		SoftwareTechnologyOption.FIREBASE,
+		SoftwareTechnologyOption.VUE,
+		SoftwareTechnologyOption.TAILWIND,
 		SoftwareTechnologyOption.NODE,
+		SoftwareTechnologyOption.MONGODB,
+		SoftwareTechnologyOption.MAPBOX,
 		SoftwareTechnologyOption.STRIPE,
-		SoftwareTechnologyOption.GOOGLE_MAPS,
-		SoftwareTechnologyOption.COCOAPODS,
 	],
 };
 
 const imageLargeSection1: ImageLargeSection = {
 	type: 'image-large',
 	alt: 'Eigen Nodes',
-	src: '/images/projects/personal/cup-u/screens-1.png',
-	title: 'Client & Runner Apps',
+	src: '/images/projects/paperdodo/online-booking/thumbnail.png',
+	title: 'Quickly Book Appointments',
 	caption:
-		'To assist coaches and gyms improve their website, the Coaching platform monitored in-depth analytics on the website traffic and user engagement. This included page views, user engagement, visit location, device type, and more.',
+		'Customers can quickly and easily book appointments with service providers via a web app, and manage their appointments in a dashboard.',
+};
+const imageLargeSection2: ImageLargeSection = {
+	type: 'image-large',
+	alt: 'Eigen Nodes',
+	src: '/images/projects/paperdodo/online-booking/config-1.png',
+	title: 'Customize Appointment Settings',
+	caption:
+		'Service providers can customize appointment settings such as availability, geographic location, service offerings,and more.',
+};
+const imageLargeSection3: ImageLargeSection = {
+	type: 'image-large',
+	alt: 'Eigen Nodes',
+	src: '/images/projects/paperdodo/online-booking/order-1.png',
+	title: 'Physical Product Offerings',
+	caption:
+		'Service providers can also offer physical products to customers, such as food and beverages (this was slightly before UberEats and DoorDash became popular), and manage their inventory in a dashboard.',
+};
+const imageLargeSection4: ImageLargeSection = {
+	type: 'image-large',
+	alt: 'Eigen Nodes',
+	src: '/images/projects/paperdodo/online-booking/mobile-1.png',
+	title: 'Mobile-Friendly Appointment Management',
+	caption:
+		'For on-the-go service providers, the mobile app allows them to manage their appointments and inventory on the go.',
 };
 
 const featuresSection1: FeaturesSection = {
 	type: 'features',
 	title: 'Features',
 	description:
-		'The Eigen Coach dashboard provides a comprehensive set of features to help coaches manage their remote clients, track their progress, and provide them with personalized feedback – all at lightning speed.',
+		'The Online Booking feature provides a comprehensive set of features to help service providers manage their appointments and inventory.',
 	features: [
 		{
-			title: 'Geofencing',
-			description: `CupU uses geofencing with the Google Maps API to deliver coffee, tea, and hot chocolate to customers only on-campus.`,
-			icon: <MapPinned />,
-		},
-		{
-			title: 'Customizable Menu',
+			title: 'Customizable Offerings',
 			description:
-				'Customers can customize their drink by selecting their preferred coffee, tea, and hot chocolate, as well as the size and sweetness of their drink.',
-			icon: <Coffee />,
+				'Customers can customize their appointment by selecting their preferred service provider, date, and time.',
+			icon: <ListCheck />,
 		},
 		{
 			title: 'Payment Processing',
 			description:
-				'CupU uses Stripe to process payments for orders. This allows for a more personal and interactive experience.',
+				'PaperDodo uses Stripe to process payments for orders. This allows for a more personal and interactive experience.',
 			icon: <Wallet />,
 		},
 		{
-			title: 'Real-Time Order Tracking',
+			title: 'Route Optimization',
+			description: `PaperDodo uses route optimization algorithms to help service providers optimize their routes and reduce travel time.`,
+			icon: <MapPinned />,
+		},
+		{
+			title: 'Real-Time Updates',
 			description:
-				'Customers can track the progress of their order in real-time, and the runner can update the customer with the progress of their order.',
+				'Customers and service providers can receive real-time updates on the status of their appointments and orders.',
 			icon: <Timer />,
 		},
 	],
@@ -94,7 +118,7 @@ export const PaperDodoOnlineBooking: Project = {
 	companyId: 'paperdodo',
 	id: 'paperdodo-online-booking',
 	description:
-		'Ride share to and from work with co-workers, organized by your employer.',
+		'Easily provide customers with a seamless online booking experience.',
 	link: '',
 	color: '#FC5F2B',
 	tags: [ProjectTag.SOFTWARE, ProjectTag.STARTUP],
@@ -102,7 +126,7 @@ export const PaperDodoOnlineBooking: Project = {
 		'/images/projects/paperdodo/online-booking/thumbnail.png',
 	page: {
 		summary:
-			'As a coffee lover and focused studier, I found it difficult to find time to fuel up and stay focused – as do many university students. CupU is a coffee, tea, and hot chocolate brewing and delivery service, geofenced to my university campus, that hand delivers drinks anywhere on campus, at any time of the day. While not scalable, CupU was a fun project to work on – and helped students across campus stay focused and energized.',
+			"In keeping with PaperDodo's mission to push the world towards a paperless future, PaperDodo Online Booking allows customers to book appointments with service providers via a web app, and manage their appointments in a dashboard. This feature was designed specifically for Tesla, who sought to streamline their at-home service booking process.",
 		heroImageSrc:
 			'/images/projects/paperdodo/online-booking/hero-cropped.png',
 		placeholderHeroImageSrc:
@@ -114,6 +138,9 @@ export const PaperDodoOnlineBooking: Project = {
 		sections: [
 			softwareTechnologiesSection1,
 			imageLargeSection1,
+			imageLargeSection2,
+			imageLargeSection3,
+			imageLargeSection4,
 			featuresSection1,
 			otherProjectsSection,
 		],

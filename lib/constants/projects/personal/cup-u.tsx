@@ -1,15 +1,11 @@
 import {
 	Project,
 	ProjectTag,
-	ImageGallerySection,
-	ImageGalleryImage,
 	ImageLargeSection,
-	YoutubeLargeSection,
 	OtherProjectsSection,
 	SoftwareTechnologyOption,
 	SoftwareTechnologiesSection,
 	FeaturesSection,
-	DividerSection,
 } from '@/lib/types';
 
 import {
@@ -68,7 +64,7 @@ const featuresSection1: FeaturesSection = {
 		{
 			title: 'Payment Processing',
 			description:
-				'CupU uses Stripe to process payments for orders. This allows for a more personal and interactive experience.',
+				'CupU uses Stripe to process payments for orders. This helped to provide a quick and easy experience for customers.',
 			icon: <Wallet />,
 		},
 		{

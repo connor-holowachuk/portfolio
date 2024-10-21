@@ -71,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 	return (
 		<div
-			className="group project-card-border relative  p-[1px] rounded-sm h-auto md:h-[500px] w-full bg-border/50 overflow-hidden transition-all duration-300 ease-in-out"
+			className="group project-card-border relative  p-[1px] rounded-sm h-auto md:min-h-[500px] flex flex-col flex-grow w-full bg-border/50 overflow-hidden transition-all duration-300 ease-in-out"
 			style={
 				{
 					'--project-color-border':
@@ -95,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					className={cn(
 						' border-white/5  md:h-full w-full  relative z-10',
 						variant === 'small'
-							? 'border-b border-r-0 w-full pb-8 mb-4 h-[200px] min-h-[200px]'
+							? 'border-b border-r-0 w-full pb-4 h-[220px] min-h-[220px] max-h-[220px]'
 							: 'border-b md:border-b-0 md:border-r md:w-auto md:pr-8 pb-4 md:pb-0 h-[300px]'
 					)}>
 					<div

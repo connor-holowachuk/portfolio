@@ -153,7 +153,8 @@ export const MobileApp: Project = {
 	title: 'Mobile App',
 	companyId: 'eigen-fitness',
 	id: 'eigen-mobile-app',
-	description: 'The mobile app for Eigen Fitness.',
+	description:
+		'Connect with your coach, improve your form, and stay on track to reaching your goals.',
 	link: 'https://www.eigen.fitness',
 	color: '#FC5F2B',
 	tags: [ProjectTag.SOFTWARE, ProjectTag.STARTUP],

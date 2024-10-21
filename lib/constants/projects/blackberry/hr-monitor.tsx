@@ -60,21 +60,21 @@ const gallerySection1: ImageGallerySection = {
 			alt: 'Eigen Nodes',
 			captionHeader: 'LED SpO2 + HR Monitor',
 			caption:
-				'A combination of 3D printed components, off-the-shelf plastic enclosures, and a custom CNC milled screen window, the enclosure provided a simple installation and interface for the operator to view the status of the system and control the crane.',
+				'Both green and red LEDs are used to provide an accurate measurement of SpO2 and heart rate, as measured by an on-board photodetector.',
 		},
 		{
 			src: '/images/projects/blackberry/hr-monitor/breadboard-1.jpeg',
 			alt: 'Eigen Nodes',
 			captionHeader: 'Breadboard Prototype',
 			caption:
-				'Equipped with a u-blox 4G modem and optional wind speed sensor, the software was able to provide the operator with weather updates and warnings when the wind speed exceeded safe operating limits.',
+				'A power supply, LED driver, ADC, and signal amplifier were designed and mounted on a breadboard for initial testing. The breadboard also interfaced directly to the Raspberry Pi for data acquisition and control.',
 		},
 		{
 			src: '/images/projects/blackberry/hr-monitor/phone-1.png',
 			alt: 'Eigen Nodes',
 			captionHeader: 'Mobile App',
 			caption:
-				'Along with avoiding other cranes, the boom and rear counterweight must also avoid nearby towers, especially in dense urban environments. Calibrating collision zones for the boom and counterweight helped the operator to avoid collisions with nearby towers.',
+				'The mobile app provides a secure and intuitive interface for the user to view their heart rate and SpO2 data, as well as control the device. HR and SpO2 were calculated on the Raspberry Pi, and the data was securely sent to the BlackBerry BBM Enterprise Server.',
 		},
 	],
 };

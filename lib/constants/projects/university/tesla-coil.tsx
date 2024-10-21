@@ -102,7 +102,8 @@ export const TeslaCoil: Project = {
 	title: 'Tesla Coil',
 	companyId: 'university',
 	id: 'university-tesla-coil',
-	description: 'Tesla Coil',
+	description:
+		'A 66kV Tesla Coil that played music through the arc.',
 	link: '',
 	color: '#FC5F2B',
 	tags: [

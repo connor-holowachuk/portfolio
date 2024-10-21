@@ -149,7 +149,7 @@ export const SatelliteLogger: Project = {
 	companyId: 'exact-technology',
 	id: 'exact-satellite-logger',
 	description:
-		'Concrete curing monitoring with Iridium connectivity.',
+		'Monitor concrete curing profiles from remote sites with Iridium connectivity.',
 	link: 'https://www.exact.com',
 	color: '#FC5F2B',
 	tags: [

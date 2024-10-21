@@ -44,7 +44,7 @@ export default function Engineering({
 					'blackberry-hr-monitor',
 					'university-tesla-coil',
 					'personal-reflow-oven',
-					'exact-rh-monitor-boring',
+					'exact-multipoint-rh-monitor',
 					'exact-satellite-logger',
 				]}
 			/>

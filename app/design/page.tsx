@@ -41,7 +41,7 @@ export default function Design({ searchParams }: SearchParamProps) {
 					'blackberry-hr-monitor',
 					'university-tesla-coil',
 					'personal-reflow-oven',
-					'exact-rh-monitor-boring',
+					'exact-multipoint-rh-monitor',
 					'exact-satellite-logger',
 				]}
 			/>

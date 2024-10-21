@@ -172,7 +172,8 @@ export const Dashboard: Project = {
 	title: 'Coaching Dashboard',
 	companyId: 'eigen-fitness',
 	id: 'eigen-dashboard',
-	description: 'The coaching dashboard for Eigen Fitness.',
+	description:
+		'Build more meaningful relationships with remote personal training clients.',
 	link: 'https://www.eigen.fitness',
 	color: '#FC5F2B',
 	tags: [ProjectTag.SOFTWARE, ProjectTag.STARTUP],

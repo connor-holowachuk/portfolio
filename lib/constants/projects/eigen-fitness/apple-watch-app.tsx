@@ -90,7 +90,7 @@ export const AppleWatchApp: Project = {
 	title: 'Apple Watch App',
 	companyId: 'eigen-fitness',
 	id: 'eigen-apple-watch-app',
-	description: 'Running Nodes on the Apple Watch.',
+	description: 'All the features of Nodes, now on the Apple Watch.',
 	link: 'https://www.eigen.fitness',
 	color: '#FC5F2B',
 	tags: [ProjectTag.SOFTWARE, ProjectTag.STARTUP],

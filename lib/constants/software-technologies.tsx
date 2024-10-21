@@ -164,8 +164,14 @@ export const SoftwareTechnologiesData: SoftwareTechnologyOptionType[] =
 		{
 			type: SoftwareTechnologyOption.VUE,
 			title: 'Vue.js',
-			iconUrl: '/images/software-technologies/vue.png',
+			iconUrl: '/images/software-technologies/vuejs.png',
 			link: 'https://vuejs.org/',
+		},
+		{
+			type: SoftwareTechnologyOption.MONGODB,
+			title: 'MongoDB',
+			iconUrl: '/images/software-technologies/mongodb.svg',
+			link: 'https://www.mongodb.com/',
 		},
 		{
 			type: SoftwareTechnologyOption.BBME,
@@ -211,7 +217,7 @@ export const SoftwareTechnologiesData: SoftwareTechnologyOptionType[] =
 		},
 		{
 			type: SoftwareTechnologyOption.ALTIUM,
-			title: 'Altium',
+			title: 'Altium Designer',
 			iconUrl:
 				'/images/software-technologies/altium-designer.png',
 			link: 'https://www.altium.com/products/altium-designer',
@@ -227,5 +233,17 @@ export const SoftwareTechnologiesData: SoftwareTechnologyOptionType[] =
 			title: 'Fusion 360',
 			iconUrl: '/images/software-technologies/fusion.png',
 			link: 'https://www.autodesk.com/products/fusion-360/overview',
+		},
+		{
+			type: SoftwareTechnologyOption.PARTICLE,
+			title: 'Particle',
+			iconUrl: '/images/software-technologies/particle.png',
+			link: 'https://www.particle.io/',
+		},
+		{
+			type: SoftwareTechnologyOption.MAPBOX,
+			title: 'Mapbox',
+			iconUrl: '/images/software-technologies/mapbox.png',
+			link: 'https://www.mapbox.com/',
 		},
 	];

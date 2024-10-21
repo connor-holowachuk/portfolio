@@ -2,7 +2,14 @@
 import React from 'react';
 import Link from 'next/link';
 import { Label } from '@/components/ui/label';
-import { Facebook, Github, Linkedin, Twitter } from 'lucide-react';
+import {
+	Facebook,
+	Github,
+	Linkedin,
+	Mail,
+	Send,
+	Twitter,
+} from 'lucide-react';
 
 const Footer = () => {
 	return (
@@ -82,6 +89,11 @@ const Footer = () => {
 							Let's Connect
 						</h3>
 						<div className="flex space-x-4">
+							<a
+								href="mailto:holowachukc@gmail.com"
+								className=" text-gray-500 hover:text-accent">
+								<Mail size={24} />
+							</a>
 							<a
 								href="https://www.linkedin.com/in/connor-holowachuk/"
 								className="text-gray-500 hover:text-accent">

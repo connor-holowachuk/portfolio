@@ -5,10 +5,12 @@ import {
 	ImageGalleryImage,
 	ImageLargeSection,
 	YoutubeLargeSection,
+	VideoLargeSection,
 	OtherProjectsSection,
 	FeaturesSection,
 	SoftwareTechnologyOption,
 	SoftwareTechnologiesSection,
+	DividerSection,
 } from '@/lib/types';
 
 import {
@@ -211,6 +213,24 @@ const gallerySection2: ImageGallerySection = {
 	],
 };
 
+const videoLargeSection1: VideoLargeSection = {
+	type: 'video-large',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/eigen-fitness/nodes/cap-touch.MOV?t=2024-10-20T20%3A24%3A27.085Z',
+	alt: 'Eigen Nodes',
+	title: 'Capacitive Tap Sensor Testing',
+	description:
+		'The capacitive tap sensor is used to trigger actions such as starting a set or pausing the workout. It is activated by a simple tap on the Node, and managed by an integrated conductive plate in a flexible PCB.',
+};
+
+const videoLargeSection2: VideoLargeSection = {
+	type: 'video-large',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/eigen-fitness/nodes/leds.MOV?t=2024-10-20T20%3A27%3A19.944Z',
+	alt: 'Eigen Nodes',
+	title: 'LED Phasing Algorithm',
+	description:
+		"The LED phasing algorithm is used to provide visually appealing feedback to the user during workouts. The Node's color indicates its current state; here, the Node is 'breathing' red and blue to indicate that it is currently idle.",
+};
+
 const featuresSection1: FeaturesSection = {
 	type: 'features',
 	title: 'Features',
@@ -291,11 +311,15 @@ const otherProjectsSection: OtherProjectsSection = {
 	],
 };
 
+const dividerSection1: DividerSection = {
+	type: 'divider',
+};
+
 export const Nodes: Project = {
 	title: 'Nodes',
 	companyId: 'eigen-fitness',
 	id: 'eigen-nodes',
-	description: 'Wearables made for weightlifting.',
+	description: 'The wearables made for weightlifting.',
 	link: 'https://www.eigen.fitness',
 	color: '#FC5F2B',
 	tags: [
@@ -329,6 +353,9 @@ export const Nodes: Project = {
 			youtubeLargeSection2,
 			gallerySection1,
 			gallerySection2,
+			videoLargeSection1,
+			videoLargeSection2,
+			dividerSection1,
 			featuresSection1,
 			softwareTechnologiesSection1,
 			otherProjectsSection,

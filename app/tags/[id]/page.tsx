@@ -38,19 +38,27 @@ export default function TagPage({ params }: Props) {
 			{taggedProjects.length === 0 ? (
 				<PageNotFound id={id} />
 			) : (
-				<div className="flex flex-col  max-w-7xl mx-auto pt-32">
+				<div className="flex flex-col px-4 lg:px-0 max-w-7xl mx-auto pt-32 overflow-hidden w-full">
 					<Label
 						variant="titleLg"
 						className="text-foreground">
 						All{' '}
 						<span className="text-accent leading-normal font-mono bg-accent/20 rounded-md border border-accent font-light px-3 py-0.5">
-							#{id}
+							#
+							{id === 'plastic_injection'
+								? 'plastic'
+								: id}
 						</span>{' '}
 						projects.
 					</Label>
-					<div className="max-w-5xl flex flex-col mx-auto gap-4 py-12">
+					<div className="max-w-5xl grid grid-cols-1 lg:grid-cols-2 mx-auto gap-4 py-12">
+						{/* <div className="max-w-5xl flex flex-col mx-auto gap-4 py-12"> */}
 						{taggedProjects.map((p) => (
-							<ProjectCard key={p.id} project={p} />
+							<ProjectCard
+								key={p.id}
+								project={p}
+								variant="small"
+							/>
 						))}
 					</div>
 				</div>

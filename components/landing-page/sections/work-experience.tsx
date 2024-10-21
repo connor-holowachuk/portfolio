@@ -102,7 +102,7 @@ const WorkExperienceCard = ({
 	return (
 		<div
 			className={cn(
-				'grid grid-cols-1 lg:grid-cols-2 relative flex-row p-8 rounded-xs h-[500px] w-full',
+				'grid grid-cols-1 lg:grid-cols-2 relative flex-row p-8 rounded-xs min-h-[500px] w-full',
 				scheme === 'light'
 					? 'bg-primary text-background'
 					: scheme === 'color-blue'

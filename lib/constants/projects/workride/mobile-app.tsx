@@ -25,6 +25,7 @@ import {
 	Wallet,
 	Coffee,
 	Timer,
+	Calendar,
 } from 'lucide-react';
 
 const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
@@ -42,39 +43,39 @@ const softwareTechnologiesSection1: SoftwareTechnologiesSection = {
 const imageLargeSection1: ImageLargeSection = {
 	type: 'image-large',
 	alt: 'Eigen Nodes',
-	src: '/images/projects/personal/cup-u/screens-1.png',
-	title: 'Client & Runner Apps',
-	caption:
-		'To assist coaches and gyms improve their website, the Coaching platform monitored in-depth analytics on the website traffic and user engagement. This included page views, user engagement, visit location, device type, and more.',
+	src: '/images/projects/workride/mobile-app/screens-1.png',
+	title: 'Get a Ride to Work',
+	description:
+		'WorkRide allows employees to easily find a ride to and from work with co-workers, organized by their employer.',
 };
 
 const featuresSection1: FeaturesSection = {
 	type: 'features',
 	title: 'Features',
 	description:
-		'The Eigen Coach dashboard provides a comprehensive set of features to help coaches manage their remote clients, track their progress, and provide them with personalized feedback – all at lightning speed.',
+		'The WorkRide mobile app provides a comprehensive set of features to help employees find rides to and from work with co-workers, organized by their employer.',
 	features: [
 		{
-			title: 'Geofencing',
-			description: `CupU uses geofencing with the Google Maps API to deliver coffee, tea, and hot chocolate to customers only on-campus.`,
+			title: 'Custom Route Optimization',
+			description: `WorkRide uses a custom routing algorithm to match riders with drivers, and optimize routes to reduce travel time.`,
 			icon: <MapPinned />,
 		},
 		{
-			title: 'Customizable Menu',
+			title: 'Schedule Rides',
 			description:
-				'Customers can customize their drink by selecting their preferred coffee, tea, and hot chocolate, as well as the size and sweetness of their drink.',
-			icon: <Coffee />,
+				'Riders and drivers can schedule rides in advance, making the start of the day effortless for both riders and drivers.',
+			icon: <Calendar />,
 		},
 		{
 			title: 'Payment Processing',
 			description:
-				'CupU uses Stripe to process payments for orders. This allows for a more personal and interactive experience.',
+				'WorkRide uses Stripe Connect to process payments for rides. This allows for simple, frictionless payment processing, without the need for employees to manually collect payment.',
 			icon: <Wallet />,
 		},
 		{
-			title: 'Real-Time Order Tracking',
+			title: 'Real-Time Updates',
 			description:
-				'Customers can track the progress of their order in real-time, and the runner can update the customer with the progress of their order.',
+				'Riders and drivers can receive real-time updates on the status of their rides, and messages can be sent between riders and drivers.',
 			icon: <Timer />,
 		},
 	],
@@ -101,7 +102,7 @@ export const WorkRideMobileApp: Project = {
 	thumbnailUrl: '/images/projects/workride/mobile-app/hero.png',
 	page: {
 		summary:
-			'As a coffee lover and focused studier, I found it difficult to find time to fuel up and stay focused – as do many university students. CupU is a coffee, tea, and hot chocolate brewing and delivery service, geofenced to my university campus, that hand delivers drinks anywhere on campus, at any time of the day. While not scalable, CupU was a fun project to work on – and helped students across campus stay focused and energized.',
+			'WorkRide is a ride share app that allows employees to request rides to and from work with co-workers, organized by their employer. I built the iOS app using Swift and Firebase, a custom routing algorithm, and the connection algorithm to match riders with drivers.',
 		heroImageSrc:
 			'/images/projects/workride/mobile-app/hero-cropped.png',
 		placeholderHeroImageSrc:

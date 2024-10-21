@@ -4,7 +4,7 @@ import { PaperDodoFrontendSite } from './frontend-site';
 
 export const ProjectsPaperdodo: Project[] = [
 	PaperDodoOnlineBooking,
-	PaperDodoFrontendSite,
+	// PaperDodoFrontendSite,
 ];
 
-export { PaperDodoOnlineBooking, PaperDodoFrontendSite };
+export { PaperDodoOnlineBooking };

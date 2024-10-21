@@ -17,7 +17,7 @@ const defaultShowcaseProjectIds = [
 	'eigen-mobile-app',
 	'exact-temperature-logger',
 	'personal-reflow-oven',
-	'exact-rh-monitor-boring',
+	'exact-multipoint-rh-monitor',
 	'dnai-labs-dashboard',
 	'eigen-ads-mobile-app',
 	'exact-pcb-antenna-tuning',

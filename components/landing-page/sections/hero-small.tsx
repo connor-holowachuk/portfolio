@@ -97,6 +97,7 @@ const HeroSmallSection: React.FC<HeroSectionProps> = ({
 							<TextEffect
 								per="word"
 								as="h3"
+								className="leading-[60px] md:leading-[80px] lg:leading-[110px] "
 								preset="blur">
 								{title}
 							</TextEffect>
