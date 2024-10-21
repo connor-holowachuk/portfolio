@@ -43,28 +43,28 @@ const gallerySection1: ImageGallerySection = {
 		"The Tesla Coil design and testing was completed in 2 months. The end product made use of my custom power supply, primary coil driver, over 2,000 tuns on the secondary coil, and an audio signal modulator to play an audio track through the coil's arc. Unfortunately, I don't have any videos of the music playing, but I did successfully play Sail by AWOLNATION through the coil on demo day!",
 	images: [
 		{
-			src: '/images/projects/university/tesla-coil/winding-1.png',
+			src: '/images/projects/university/tesla-coil/winding-1b.png',
 			alt: 'Winding the Coil',
 			captionHeader: 'Winding the Coil',
 			caption:
 				'Using stepper motors and extruded aluminium, I designed and built a custom winding machine to wind over 2,000 turns of 24 gauge wire on the secondary coil.',
 		},
 		{
-			src: '/images/projects/university/tesla-coil/circuit-2.jpg',
+			src: '/images/projects/university/tesla-coil/circuit-2b.jpg',
 			alt: 'Breadboard Prototype',
 			captionHeader: 'Breadboard Prototype',
 			caption:
 				"After winding the coil, I breadboarded the modulation circuit that controlled the frequency of the Tesla Coil's primary circuit. And audio signal served as the LM555's modulating signal on top of the base frequency.",
 		},
 		{
-			src: '/images/projects/university/tesla-coil/circuit-1.jpg',
+			src: '/images/projects/university/tesla-coil/circuit-1b.jpg',
 			alt: 'Power Supply',
 			captionHeader: 'Power Supply',
 			caption:
 				'To power the Tesla Coil, I built a 120VAC-5V/24VDC power supply to power the coil and to illuminate a nearby fluorescent bulb. The 5V output was used to drive the modulation circuit, while the 24VDC output powered the primary circuit.',
 		},
 		{
-			src: '/images/projects/university/tesla-coil/coil-1.jpg',
+			src: '/images/projects/university/tesla-coil/coil-1b.jpg',
 			alt: 'The Final Coil',
 			captionHeader: 'The Final Coil',
 			caption:
@@ -72,7 +72,7 @@ const gallerySection1: ImageGallerySection = {
 		},
 
 		{
-			src: '/images/projects/university/tesla-coil/phosphorus-bulb-1.png',
+			src: '/images/projects/university/tesla-coil/phosphorus-bulb-1b.png',
 			alt: 'Lighting the Bulb',
 			captionHeader: 'Lighting the Bulb',
 			caption:
@@ -80,7 +80,7 @@ const gallerySection1: ImageGallerySection = {
 		},
 
 		{
-			src: '/images/projects/university/tesla-coil/arc-1.png',
+			src: '/images/projects/university/tesla-coil/arc-1b.png',
 			alt: 'Lab Demo',
 			captionHeader: 'Lab Demo',
 			caption:

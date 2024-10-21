@@ -118,7 +118,7 @@ export const ReflowOven: Project = {
 		'/images/projects/personal/reflow-oven/baking-1.jpeg',
 	page: {
 		summary:
-			'As a coffee lover and focused studier, I found it difficult to find time to fuel up and stay focused – as do many university students. CupU is a coffee, tea, and hot chocolate brewing and delivery service, geofenced to my university campus, that hand delivers drinks anywhere on campus, at any time of the day. While not scalable, CupU was a fun project to work on – and helped students across campus stay focused and energized.',
+			'A private project which was initiated by the aspiration to build circuits that make use of SMT components. A home-etched control circuit, comprised of high power SSRs, an IR thermal sensor, and an ATMEGA-328P bootloaded with Arduino, was used to control the heating elements of an inexpensive toaster oven and follow the appropriate heating curve for the solder paste to set correctly.',
 		heroImageSrc:
 			'/images/projects/personal/reflow-oven/baking-1.jpeg',
 		placeholderHeroImageSrc:
