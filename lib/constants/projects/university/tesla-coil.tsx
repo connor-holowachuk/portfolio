@@ -14,7 +14,7 @@ const videoLargeSection1: VideoLargeSection = {
 	title: 'Winding the Coil',
 	description:
 		'With over 2,000 turns of 24 gauge wire on the seconary coil, constructing the Tesla Coil was no trivial task. To keep the windings tightly bound together, and to optimize for efficiency, I designed and built a custom winding machine. Two stepper motors were used, driven by custom firmware, to turn the coil and step the wire along the tube – just a hair above the last turn of the previous layer.',
-	src: '/videos/projects/university/tesla-coil/winding-1.mov',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/university/tesla-coil/winding-1.mov?t=2024-10-21T20%3A27%3A36.594Z',
 	alt: 'Eigen Nodes',
 };
 
@@ -23,7 +23,7 @@ const videoLargeSection2: VideoLargeSection = {
 	title: 'Phosphorus Bulb Test',
 	description:
 		"To test the Tesla Coil, I built a 120VAC power supply to power the coil and to illuminate a nearby fluorescent bulb. Dispite shorting my house's breaker and shooting lightning out of the MOSFETs on the first try, I was able to light the bulb after adjusting the power supply to limit the current draw.",
-	src: '/videos/projects/university/tesla-coil/ph-bulb.mov',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/university/tesla-coil/ph-bulb.mov?t=2024-10-21T20%3A27%3A19.411Z',
 	alt: 'Eigen Nodes',
 };
 
@@ -32,7 +32,7 @@ const videoLargeSection3: VideoLargeSection = {
 	title: 'Arcing (From a Distance)',
 	description:
 		"The ultimate test was to measure the arc distance when shorting the secondary coil to the primary circuit's ground. With the university's largest bench top power supply, I was able to arc across a 2.5cm gap – around 66kV.",
-	src: '/videos/projects/university/tesla-coil/arc-1.mov',
+	src: 'https://qbizcrwoohmzgibntrca.supabase.co/storage/v1/object/public/personal_site_large_files/projects/university/tesla-coil/arc-1.mov?t=2024-10-21T20%3A27%3A11.030Z',
 	alt: 'Eigen Nodes',
 };
 
