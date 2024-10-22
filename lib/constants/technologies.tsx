@@ -18,6 +18,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						link: 'https://www.intel.com',
 						workExperienceIds: ['eigen-fitness'],
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'ATMEGA328P',
@@ -29,6 +30,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'exact-technology',
 						],
 						startYear: 2022,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'CC2650',
@@ -40,6 +42,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'exact-technology',
 						],
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'DA14580',
@@ -48,6 +51,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						link: 'https://www.intel.com',
 						workExperienceIds: ['eigen-fitness'],
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'STM32F205',
@@ -56,6 +60,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						link: 'https://www.intel.com',
 						workExperienceIds: ['exact-technology'],
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: '68HC11',
@@ -64,6 +69,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						link: 'https://www.intel.com',
 						workExperienceIds: ['eigen-fitness'],
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 				],
 			},
@@ -78,21 +84,25 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'exact-technology',
 						],
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'LoRa & LoRaWAN',
 						workExperienceIds: ['exact-technology'],
 						startYear: 2022,
+						yearsOfExperience: 4,
 					},
 					{
 						title: '4G/LTE',
 						workExperienceIds: ['exact-technology'],
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'Satellite Communication',
 						workExperienceIds: ['exact-technology'],
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'OTA DFU (via BLE)',
@@ -101,6 +111,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 							'exact-technology',
 						],
 						startYear: 2022,
+						yearsOfExperience: 3,
 					},
 				],
 			},
@@ -111,34 +122,42 @@ export const TechnologiesOptions: TechnologyPage[] = [
 					{
 						title: 'I2C',
 						startYear: 2019,
+						yearsOfExperience: 12,
 					},
 					{
 						title: 'JTAG',
 						startYear: 2012,
+						yearsOfExperience: 12,
 					},
 					{
 						title: 'SPI',
 						startYear: 2012,
+						yearsOfExperience: 12,
 					},
 					{
 						title: 'SWD',
 						startYear: 2012,
+						yearsOfExperience: 8,
 					},
 					{
 						title: 'USB',
 						startYear: 2012,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'UART',
 						startYear: 2012,
+						yearsOfExperience: 12,
 					},
 					{
 						title: 'PWM',
 						startYear: 2019,
+						yearsOfExperience: 12,
 					},
 					{
 						title: '1-Wire',
 						startYear: 2019,
+						yearsOfExperience: 1,
 					},
 				],
 			},
@@ -147,48 +166,64 @@ export const TechnologiesOptions: TechnologyPage[] = [
 				splitColumns: true,
 				technologies: [
 					{
+						title: 'Analog Circuit Design',
+						startYear: 2010,
+						yearsOfExperience: 12,
+					},
+					{
+						title: 'Digital Circuit Design',
+						startYear: 2010,
+						yearsOfExperience: 12,
+					},
+					{
 						title: 'Antenna Tuning',
 						startYear: 2019,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'High-Densitiy PCB Design',
 						startYear: 2019,
+						yearsOfExperience: 6,
 					},
 					{
 						title: 'Multi-Layer PCB Design',
 						startYear: 2012,
+						yearsOfExperience: 6,
 					},
 					{
 						title: 'Ultra-low-power Design',
 						startYear: 2012,
+						yearsOfExperience: 6,
 					},
 					{
 						title: 'LiPo/Li-Ion Battery Chargers',
 						startYear: 2012,
+						yearsOfExperience: 8,
 					},
 					{
 						title: '9-axis IMUs',
 						startYear: 2012,
-					},
-					{
-						title: '9-axis IMUs',
-						startYear: 2012,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'DC-DC Converter Design',
 						startYear: 2019,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'AC-DC Converter Design',
 						startYear: 2019,
+						yearsOfExperience: 8,
 					},
 					{
 						title: 'Digital High-power Controllers',
 						startYear: 2019,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'Signal Noise Suppression',
 						startYear: 2019,
+						yearsOfExperience: 5,
 					},
 				],
 			},
@@ -198,30 +233,37 @@ export const TechnologiesOptions: TechnologyPage[] = [
 					{
 						title: 'Plastic Injection Molding Design',
 						startYear: 2019,
+						yearsOfExperience: 3,
 					},
 					{
 						title: 'FDM 3D Printing',
 						startYear: 2019,
+						yearsOfExperience: 4,
 					},
 					{
 						title: 'SLA 3D Printing',
 						startYear: 2012,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'CNC Milling & Turning',
 						startYear: 2012,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'Manual Vertical Milling',
 						startYear: 2012,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'Laser Cutting Plastic',
 						startYear: 2012,
+						yearsOfExperience: 3,
 					},
 					{
 						title: 'Harness Design & Management',
 						startYear: 2012,
+						yearsOfExperience: 2,
 					},
 				],
 			},
@@ -232,18 +274,22 @@ export const TechnologiesOptions: TechnologyPage[] = [
 					{
 						title: 'Altium Designer',
 						startYear: 2019,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'Altium Circuit Studio',
 						startYear: 2012,
+						yearsOfExperience: 3,
 					},
 					{
 						title: 'Fusion 360',
 						startYear: 2019,
+						yearsOfExperience: 6,
 					},
 					{
 						title: 'Eagle',
 						startYear: 2012,
+						yearsOfExperience: 10,
 					},
 				],
 			},
@@ -254,34 +300,42 @@ export const TechnologiesOptions: TechnologyPage[] = [
 					{
 						title: 'Oscilloscope with FFT',
 						startYear: 2015,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'Spectrum Analyzer',
 						startYear: 2019,
+						yearsOfExperience: 4,
 					},
 					{
 						title: 'Logic Analyzer',
 						startYear: 2017,
+						yearsOfExperience: 3,
 					},
 					{
 						title: 'DMM',
 						startYear: 2012,
+						yearsOfExperience: 12,
 					},
 					{
 						title: 'Function Generator',
 						startYear: 2012,
+						yearsOfExperience: 4,
 					},
 					{
 						title: 'JTAG Programmer',
 						startYear: 2012,
+						yearsOfExperience: 6,
 					},
 					{
 						title: 'Reflow Soldering',
 						startYear: 2012,
+						yearsOfExperience: 8,
 					},
 					{
 						title: 'Hand Soldering (SMT)',
 						startYear: 2012,
+						yearsOfExperience: 12,
 					},
 				],
 			},
@@ -301,6 +355,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/zephyr.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 5,
 						workExperienceIds: [
 							'eigen-fitness',
 							'exact-technology',
@@ -313,6 +368,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/zephyr.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 1,
 						workExperienceIds: [
 							'eigen-fitness',
 							'exact-technology',
@@ -324,6 +380,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/freertos.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 						workExperienceIds: [
 							'eigen-fitness',
 							'exact-technology',
@@ -335,6 +392,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/zephyr.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 12,
 						workExperienceIds: [
 							'eigen-fitness',
 							'exact-technology',
@@ -352,6 +410,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/zephyr.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'SEGGER J-Link',
@@ -359,6 +418,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/freertos.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'ARM Keil',
@@ -366,6 +426,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/freertos.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'CCStudio',
@@ -373,6 +434,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/freertos.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'SI Simplicity Studio',
@@ -380,6 +442,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/freertos.png',
 						link: 'https://www.ami.com',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 				],
 			},
@@ -546,7 +609,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/docker.png',
 						link: 'https://www.docker.com',
 						startYear: 2022,
-						yearsOfExperience: 2,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'Vercel',
@@ -617,6 +680,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/llama.png',
 						link: 'https://www.nodejs.org',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'Tensorflow',
@@ -624,6 +688,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/tensorflow.png',
 						link: 'https://www.expressjs.org',
 						startYear: 2022,
+						yearsOfExperience: 3,
 					},
 					{
 						title: 'Anthropic',
@@ -631,6 +696,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/anthropic.png',
 						link: 'https://www.mongodb.com',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'Ollama',
@@ -638,6 +704,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/anthropic.png',
 						link: 'https://www.mongodb.com',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'Hugging Face',
@@ -645,6 +712,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/hugging-face.png',
 						link: 'https://www.huggingface.co',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 				],
 			},
@@ -659,6 +727,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/postgresql.png',
 						link: 'https://www.reactjs.org',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'NoSQL',
@@ -666,6 +735,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/mongodb.png',
 						link: 'https://www.reactjs.org',
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'MongoDB',
@@ -673,6 +743,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/mongodb.png',
 						link: 'https://www.nextjs.org',
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'Vector Databases',
@@ -680,6 +751,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/cerebras.png',
 						link: 'https://www.nextjs.org',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 				],
 			},
@@ -694,6 +766,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/supabase.png',
 						link: 'https://www.reactjs.org',
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'Kinde',
@@ -701,6 +774,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/kinde.png',
 						link: 'https://www.reactjs.org',
 						startYear: 2022,
+						yearsOfExperience: 0.5,
 					},
 					{
 						title: 'Firebase Auth',
@@ -708,13 +782,15 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/firebase.png',
 						link: 'https://www.nextjs.org',
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
-						title: 'Vector Databases',
-						description: 'Cerebras',
-						iconUrl: '/images/cerebras.png',
+						title: 'OAuth',
+						description: 'OAuth',
+						iconUrl: '/images/oauth.png',
 						link: 'https://www.nextjs.org',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 				],
 			},
@@ -729,6 +805,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/stripe.png',
 						link: 'https://www.reactjs.org',
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'Twilio',
@@ -736,6 +813,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/twilio.png',
 						link: 'https://www.vuejs.org',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'Mixpanel',
@@ -743,6 +821,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/mixpanel.png',
 						link: 'https://www.nextjs.org',
 						startYear: 2022,
+						yearsOfExperience: 4,
 					},
 					{
 						title: 'Resend & React Email',
@@ -750,6 +829,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/nodejs.png',
 						link: 'https://www.nodejs.org',
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'Google Maps',
@@ -757,6 +837,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/google-maps.png',
 						link: 'https://www.google.com/maps',
 						startYear: 2020,
+						yearsOfExperience: 3,
 					},
 					{
 						title: 'Mapbox',
@@ -764,6 +845,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/mapbox.png',
 						link: 'https://www.mapbox.com/',
 						startYear: 2020,
+						yearsOfExperience: 2,
 					},
 				],
 			},
@@ -778,6 +860,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/vscode.png',
 						link: 'https://www.nextjs.org',
 						startYear: 2022,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'Linear',
@@ -785,6 +868,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/linear.png',
 						link: 'https://www.linear.app',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'Jira',
@@ -792,6 +876,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/jira.png',
 						link: 'https://www.atlassian.com/software/jira',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'Postman',
@@ -799,6 +884,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/postman.png',
 						link: 'https://www.reactjs.org',
 						startYear: 2022,
+						yearsOfExperience: 6,
 					},
 					{
 						title: 'HTTPie',
@@ -806,6 +892,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/httpie.png',
 						link: 'https://www.vuejs.org',
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 					{
 						title: 'XCode',
@@ -813,6 +900,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/express.png',
 						link: 'https://www.expressjs.org',
 						startYear: 2022,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'Warp Console',
@@ -820,6 +908,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/warp.png',
 						link: 'https://www.nodejs.org',
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 				],
 			},
@@ -841,6 +930,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/figma.png',
 						link: 'https://www.intel.com',
 						startYear: 2022,
+						yearsOfExperience: 5,
 					},
 					{
 						title: 'Adobe Illustrator',
@@ -848,6 +938,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/adobe-illustrator.png',
 						link: 'https://www.adobe.com/products/illustrator.html',
 						startYear: 2022,
+						yearsOfExperience: 8,
 					},
 					{
 						title: 'Autodesk Graphic',
@@ -855,6 +946,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/autodesk-graphic.png',
 						link: 'https://www.autodesk.com/products/autocad-360/overview',
 						startYear: 2022,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'Adobe Photoshop',
@@ -862,6 +954,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/adobe-photoshop.png',
 						link: 'https://www.adobe.com/products/photoshop.html',
 						startYear: 2022,
+						yearsOfExperience: 12,
 					},
 				],
 			},
@@ -876,6 +969,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/adobe-premiere-pro.png',
 						link: 'https://www.intel.com',
 						startYear: 2022,
+						yearsOfExperience: 12,
 					},
 					{
 						title: 'Adobe After Effects',
@@ -883,6 +977,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/adobe-after-effects.png',
 						link: 'https://www.adobe.com/products/illustrator.html',
 						startYear: 2022,
+						yearsOfExperience: 10,
 					},
 					{
 						title: 'Autodesk 3D Max',
@@ -890,6 +985,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/autodesk-3d-max.png',
 						link: 'https://www.autodesk.com/products/autocad-360/overview',
 						startYear: 2022,
+						yearsOfExperience: 2,
 					},
 					{
 						title: 'Blender',
@@ -897,6 +993,7 @@ export const TechnologiesOptions: TechnologyPage[] = [
 						iconUrl: '/images/blender.png',
 						link: 'https://www.adobe.com/products/photoshop.html',
 						startYear: 2022,
+						yearsOfExperience: 1,
 					},
 				],
 			},

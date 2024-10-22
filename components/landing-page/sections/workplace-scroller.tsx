@@ -56,7 +56,7 @@ const items: WorkplaceScrollerItem[] = [
 	{
 		title: 'PaperDoDo',
 		imgUrl: '/images/workplaces/4.png',
-		url: '/workplace/paperdododo',
+		url: '/workplace/paperdodo',
 		types: ['software', 'design'],
 	},
 	{
