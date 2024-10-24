@@ -5,14 +5,20 @@ export async function trackEvent(
 	eventName: string,
 	properties: Record<string, any>,
 ) {
-	const mixpanel = Mixpanel.init(
-		process.env.MIXPANEL_TOKEN as string,
-	);
+	try {
+		const mixpanel = Mixpanel.init(
+			process.env.MIXPANEL_TOKEN as string,
+		);
 
-	const environmentMode = process.env.ENV_MODE;
+		const environmentMode = process.env.ENV_MODE;
 
-	mixpanel.track(eventName, {
-		...properties,
-		environment_mode: environmentMode,
-	});
+		mixpanel.track(eventName, {
+			...properties,
+			environment_mode: environmentMode,
+		});
+		return true;
+	} catch (err: any) {
+		console.error("Error occurred while tracking event:", err);
+		return err.message ?? "Error occurred while tracking event";
+	}
 }

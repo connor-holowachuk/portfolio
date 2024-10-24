@@ -145,7 +145,8 @@ const gallerySection1: ImageGallerySection = {
 const gallerySection2: ImageGallerySection = {
 	type: 'image-gallery',
 	title: 'Enclosures',
-	description: 'Eigen Nodes',
+	description:
+		'Designed for injection molding, the Node enclosure and band components were prototyped with SLA and FDM 3D printing.',
 	images: [
 		{
 			src: '/images/projects/eigen-fitness/nodes/drawn-design-1.png',

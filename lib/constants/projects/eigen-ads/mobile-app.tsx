@@ -44,7 +44,7 @@ export const MobileApp: Project = {
 		'/images/projects/eigen-ads/mobile-app/app-shot.jpeg',
 	page: {
 		summary:
-			'The Crane Avoidance System is a safety feature designed to prevent collisions between cranes and other structures. The system uses a combination of sensors and software to detect the presence of other cranes and other structures and to provide a warning to the operator.',
+			'To provide an easy way to track your earnings, I created the Eigen Ads mobile app. The app allows users to monitor their daily earnings, calculated in real-time by their driving route and estimated visual impressions. The app automatically prompted drivers to begin trips when entering their vehicle, powered by a custom BLE beacon.',
 		heroImageSrc:
 			'/images/projects/eigen-ads/mobile-app/app-shot.jpeg',
 		placeholderHeroImageSrc:

@@ -112,14 +112,14 @@ export const TeslaCoil: Project = {
 		ProjectTag.FIRMWARE,
 	],
 	thumbnailUrl:
-		'/images/projects/university/tesla-coil/phosphorus-bulb-2.png',
+		'/images/projects/university/tesla-coil/phosphorus-bulb-2b.png',
 	page: {
 		summary: `The Tesla Coil is a high voltage, high frequency transformer used to produce a spark gap discharge. 
 			I built this Tesla Coil as part of a class electronics design project, and incorporated a frequency modulator to play an audio signal through the coil via a 3.5mm audio cable. Limited by the power source's current supply, I was able to achieve 66kV – enough to light a nearby fluorescent bulb and create a 2-3cm spark gap discharge.`,
 		heroImageSrc:
-			'/images/projects/university/tesla-coil/phosphorus-bulb-2.png',
+			'/images/projects/university/tesla-coil/phosphorus-bulb-2b.png',
 		placeholderHeroImageSrc:
-			'/images/projects/university/tesla-coil/phosphorus-bulb-1.png',
+			'/images/projects/university/tesla-coil/phosphorus-bulb-1b.png',
 		headerLogoSrc:
 			'/images/projects/eigen-fitness/nodes/logo-1.png',
 		infoBlurb: '',
